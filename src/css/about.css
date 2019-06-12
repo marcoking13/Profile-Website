@@ -1,0 +1,44 @@
+.circle-image{
+  border-radius:50%;
+  width:50%;
+  height:50%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.jumbo{
+  border:2px solid #f4f4f4;
+  margin-top: 3%;
+  padding: 5px;
+}
+.titleA{
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.animator{
+  animation:slide .15s 1 ease-in;
+}
+@keyframes slide{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+.detCon{
+  border: 2px solid #f4f4f4;
+  margin-top: 5%;
+  padding-left:10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  margin-left: 20%;
+}
+.aboutMe{
+  line-height: 2;
+}
+.detailCon{
+  border: 2px solid #f4f4f4;
+}

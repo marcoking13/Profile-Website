@@ -1,0 +1,21 @@
+.errI{
+  width:50%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+body{
+  padding: 0;
+}
+.errBackground{
+  position: fixed;
+  top:0;
+  padding-bottom: 120%;
+}
+.erroText{
+  color:white;
+  font-weight: bold;
+  margin-top: 10%;
+  font-style: 15px;
+  text-align: center;
+  font-family: monospace;
+}

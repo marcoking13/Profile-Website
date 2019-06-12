@@ -1,0 +1,673 @@
+.navChoice{
+
+  color:white;
+  float:left;
+  font-family:monospace;
+  margin-left:5%;
+  font-size: 20px;
+}
+.logo{
+  width:30%;
+  margin-left:10%
+}
+
+@keyframes appear{
+  0%{
+    opacity:0
+  }
+  100%{
+    opacity:1;
+  }
+}
+.animator{
+  animation:slide .15s 1 ease-in;
+}
+@keyframes slide{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+.redB{
+  border:2px solid red;
+}
+.ccll{
+  animation: appear .5s 1 ease-in;
+}
+.comName{
+  text-align: center;
+
+  font-family: monospace;
+}
+.currentTp{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2%;
+  font-weight: monospace;
+}
+.currentLo{
+width:220px;
+height:200px;
+position: relative;
+
+
+
+}
+.contactButtons:hover{
+  background:purple;
+  color:white;
+}
+.bbB{
+  background: black;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 10%;
+
+}
+.prupB{
+  padding-bottom: 10%;
+  padding-top: 2.5%;
+}
+
+.cM{
+
+  text-align: center;
+
+}
+
+.insta{
+  float: left;
+  width:20%;
+
+}
+.contactBC{
+  background:black;
+  margin-left: 0%;
+}
+.contactButtons{
+  margin-top: 2.5%;
+  margin-left: 4.25%;
+  border:2px solid purple;
+  background:white;
+  width:20%;
+  float: left;
+  border-radius: 5px;
+  background:white;
+
+}
+.halfPurp{
+  background:black;
+
+}
+.ccll{
+  margin-left: 15%;
+}
+.m55{
+  margin-top: 10%;
+  padding-top: 10%;
+}
+/* Hobby Container */
+  .hobbLo{
+  width:100%;
+
+  }
+  .currentJ{
+    border-color:white !important;
+  }
+  .hobbP{
+    font-size:15px;
+    margin-top: 10%;
+  }
+  .hobbLo:hover{
+      animation :goUp 1 ease-in .2s;
+      width:80%;
+      margin-left:10%;
+      top:-10px;
+
+
+  }
+  .hobbLoActive{
+    animation :goUp 1 ease-in .2s;
+    width:80%;
+    margin-left:10%;
+    top:-10px;
+  }
+  .hobT{
+    text-align: center;
+    font-size: 22px;
+    margin-top:2%;
+  }
+  .hobbP{
+    text-align: center;
+  }
+  .hobJ{
+    border: 0px solid white !important;
+  }
+
+  .hobbLo{
+        animation :goDown 1 ease-in .2s;
+        position: relative;
+        top:10px;
+        margin-left:0%;
+
+
+
+
+
+  }
+/* -----------------*/
+.sheet{
+  position:absolute;
+  top:13%;
+  left:0;
+  z-index:1;
+
+  right:0;
+  bottom:0;
+  width:100%;
+  background:purple;
+  opacity:.3;
+  height:315px;
+
+  animation:60s infinite ease-in-out changeBackground;
+}
+.navChoice:hover{
+  opacity:1 !important;
+  animation:toWhite .2s 1 ease-in !important;
+
+
+}
+.blackBarLevel{
+  width:50%;
+  margin-left: 25%;
+  background:black !important;
+  height:20px;
+  border-radius:5px;
+
+}
+.bl0{
+  width:1%;
+
+}
+.bl1{
+  width:10%;
+  animation: .5s 1 ease-in one;
+}
+.bl2{
+  width:20%;
+    animation: .5s  1 ease-in two;
+}
+.bl3{
+  width:30%;
+    animation: .5s  1 ease-in three;
+}
+.bl4{
+  width:40%;
+    animation: .5s  1 ease-in four;
+}
+.bl5{
+  width:50%;
+    animation: .5s  1 ease-in five;
+}
+.bl6{
+  width:60%;
+    animation: .5s  1 ease-in six;
+}
+.bl7{
+  width:70%;
+    animation: .5s  1 ease-in seven;
+}
+.bl8{
+  width:80%;
+    animation: .5s  1 ease-in eight;
+}
+.bl10{
+  width:100%;
+    animation: .5s 1 ease-in ten;
+}
+.bl9{
+  width:90%;
+    animation: .2s 1 ease-in nine;
+}
+.bloodLife{
+  background:red;
+  height:20px;
+}
+@keyframes four{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:40%;
+  }
+}
+@keyframes three{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:40%;
+  }
+}
+@keyframes five{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:50%;
+  }
+}
+@keyframes six{
+  0%{
+      width:inherit;
+  }
+  100%{
+    width:60%;
+  }
+}
+@keyframes seven{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:70%;
+  }
+}
+@keyframes eight{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:80%;
+  }
+}
+@keyframes nine{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:90%;
+  }
+}
+@keyframes tenz{
+  0%{
+    width:inherit;
+  }
+  100%{
+    width:100%;
+  }
+}
+
+
+.gitLogo{
+  width:10%;
+  float: left;
+}
+.contact{
+  border:2px solid white;
+  padding:5px;
+  border-radius:5px;
+  margin-top:-1%;
+}
+@keyframes toWhite{
+  from{opacity:.5;}
+  to{opacity:1;}
+}
+
+.codeBackground{
+
+  fontFamily:fantasy;
+  fontSize:35px;
+  color:white;
+  width:100%;
+  height:400px;
+}
+
+.navgroup{
+  margin-top:1.5%;
+}
+.navgroup:hover > .navChoice{
+  animation:turnGrey .2s ease-in 1;
+  opacity:.5;
+}
+
+@keyframes turnGrey{
+  from{
+    opacity:1
+  }
+  to{
+    opacity:.5
+  }
+}
+.navbarProfile{
+  background:black;
+}
+
+@keyframes changeBackground{
+  0%{
+    background:black;
+  }
+  20%{
+    background:blue;
+  }
+  40%{
+    background:purple
+  }
+  60%{
+    background:violet
+  }
+  80%{
+    background:blue;
+  }
+  100%{
+    background:black;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* showCase */
+
+
+.showCaseTitle{
+  color:white;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 5%;
+}
+.showcaseButton{
+  width:20%;
+  margin-left:40%;
+  background:none;
+  z-index:99;
+  font-family: monospace;
+  border:4px solid white;
+  color:white;
+  margin-top:1%;
+  padding:10px;
+}
+.showcaseButton:hover{
+    background:white !important;
+    font-family: monospace;
+    border-color:black;
+    color:black;
+    transition:all .2s ease-in 1;
+}
+
+.languageIcon:hover{
+  animation: goUp .4s 1 ease-in;
+  top:-10px;
+  position: relative;
+}
+.languageBox{
+  margin-top:5%;
+
+
+  padding-bottom:5%;
+}
+/* Language Box */
+.languageTitle{
+  text-align: center;
+
+  font-family:monospace;
+  color:black;
+  text-align: center;
+  font-size: 17px;
+  margin-top:2%;
+}
+.languageIcon{
+  width:50%;
+  position: relative;
+  animation: goDown .4s 1 ease-in;
+  top:0px;
+  margin-left:25%;
+}
+
+
+
+/* App Box */
+
+
+.appBox{
+  width:80%;
+  margin-left:10%;
+
+  border:2px solid black;
+  height:200px;
+
+}
+.appImageBox{
+  height:50%;
+  border-radius:3px;
+}
+.appLogos{
+  width:70%;margin-left:15%;marginTop:5%
+}
+.appBox{
+  top:10px;
+  position:relative;
+  border-radius:10px;
+  border:5px solid none;
+  animation:goDown .2s 1 ease-in;
+}
+.appBox:hover{
+  color:white;
+  background:black;
+}
+.appBox:hover{
+
+  top:-10px;
+  position:relative;
+  border-color: red;
+  animation :goUp 1 ease-in .2s;
+}
+
+@keyframes goBlack{
+  from{
+    background:white;
+    color:black;
+  }
+  to{
+    background:black;
+    color:white;
+  }
+}
+@keyframes goDown{
+  0%{
+
+    top:-10px;
+  }
+  100%{
+    top:0px;
+  }
+}
+
+@keyframes goUp{
+  0%{
+    top:0;
+  }
+  100%{
+    top:-10px;
+  }
+}
+.cdr{
+  margin-top: 5% !important;
+
+}
+.appName{
+  margin-top: 5%;
+  text-align: center;
+}
+.appButton{
+  background:none;
+  border:2px solid black;
+  margin-left:40%;
+  width:20%;
+  border-radius:0px;
+  padding:10px;
+}
+.appButton:hover{
+  animation:.2s ease-in goBlack 1;
+  background:black;
+  color:white;
+}
+.appContainer{
+  padding-bottom:5%;
+  margin-top:2.5%;
+
+}
+.purpBordernoPad{
+  border-bottom:4px solid purple;
+  padding-bottom:0px;
+}
+.purpBorder{
+  border-bottom:4px solid purple;
+  padding-bottom:30px;
+}
+.detailN{
+  text-align: center;
+}
+.jumbotron{
+  border:2px solid black;
+  margin-top:0px;
+  margin:0;
+  border-radius:0px;
+}
+.hobbyBox{
+  margin:0;
+}
+.nopadnomarg{
+  margin:0;
+  padding:0;
+}
+.appTitle{
+  text-align: center;
+  font-size: 23px;
+  margin-top:2.5%;
+  font-family: monospace;
+}
+
+/* Hobbies */
+.hTitle{
+  text-align: center;
+
+}
+
+.resumeButton{
+  margin-left: 25%;
+  width:50%;
+  margin-top: 5%;
+  height: 50px;
+  border: 3px solid purple;
+  border-radius: 10px;
+  background:white;
+
+}
+.git:hover{
+  background:purple;
+  color:white;
+
+
+}
+.row{
+  margin: 0;
+}
+.link{
+    border-color: #cc2900 !important;
+}
+a{
+  all:none;
+}
+.link:hover{
+  background:#cc2900;
+  border-color: #cc2900;
+  color:white;
+}
+.jumbotron{
+  background:white;
+  padding-top:30px;
+}
+.bb{
+  font-weight: bold;
+}
+.hobbyB{
+  margin-top:5%;
+  margin-left: 5%;
+}
+.dj{
+  width:30%;
+  margin-left: 15%;
+  margin-bottom: 15%;
+
+}
+.djBox{
+  margin-top: 10%;
+  float:left;
+}
+.hobbyIcon{
+  width:20%;
+  animation: goDown .2s 1 ease-in;
+  position: relative;
+  top:10px;
+  margin-bottom: 10%;
+  margin-left:4%;
+}
+.moreHobby{
+  width:50%;
+  margin-left: 25%;
+  height: 50px;
+  font-size: 15px;
+  background:white;
+  margin-top:5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+
+  border: 2px solid purple;
+  color:purple;
+
+}
+.hobbyIcon:hover{
+  animation: goUp .2s 1 ease-in;
+  position: relative;
+  top:-10px;
+}
+.dj:hover{
+  animation: rotater .3s infinite ease-in;
+
+}
+.gameName{
+  margin-top: 20%;
+}
+.game{
+  width:90px;
+  height:90px;
+  top:10px;
+  position: relative;
+  animation: goDown .2s ease-in 1;
+}
+.game:hover{
+  position: relative;
+  top:-10px;
+    animation: goUp .2s ease-in 1;
+}
+
+@keyframes rotater{
+  0%{
+    transform:rotate(0deg);
+
+  }
+  50%{
+    transform:rotate(180deg)
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
