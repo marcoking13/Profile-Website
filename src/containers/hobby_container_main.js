@@ -149,8 +149,9 @@ class HobbyContainer extends React.Component{
 
   renderHobbyBox(){
     return this.state.hobbies.map((hobby)=>{
+
       return <HobbyBubble setFav={this.setFav} hobby = {hobby} />
-    });
+  });
   }
 
   renderFavorite(){
@@ -158,9 +159,9 @@ class HobbyContainer extends React.Component{
       return this.state.fav.favs.map((fav)=>{
           return <FavBubble fav = {fav} />
       });
-    }else{
-      return <div />
-    }
+  }else{
+    return <div />
+  }
   }
 
   setFav(obj,target){
@@ -172,6 +173,8 @@ class HobbyContainer extends React.Component{
         <div>
             <h2 className="hobT">Hobbies</h2>
             <div className="row">
+
+
                 <div className="jumbotron hobJ col-5">
                 <div className="row hobbCon">
                   {this.renderHobbyBox()}
@@ -179,10 +182,12 @@ class HobbyContainer extends React.Component{
               </div>
               <div className="col-1"/>
               <div className="jumbotron currentJ col-5">
+
                 <div className="row m55 ">
                     {this.renderFavorite()}
                 </div>
               </div>
+
             </div>
         </div>
       )

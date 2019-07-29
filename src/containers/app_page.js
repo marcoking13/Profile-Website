@@ -4,9 +4,8 @@ import Navbar from "./../components/nav_bar.js";
 import Showcase from "./../components/showcase.js";
 import LanguageBox from "./language_box";
 import AppContainer from "./app_container.js";
-import CurrentApp from "./../components/current_app.js";
-import Loader from "./../components/loader.js";
-import AllApps from "./../components/all_apps";
+
+
 
 class AppPage extends React.Component {
   constructor(props){
@@ -201,34 +200,160 @@ class AppPage extends React.Component {
 
       ]
     }
-    this.loader = this.loader.bind(this);
-    this.setApp = this.setApp.bind(this);
   }
+  renderAllApps(){
+    return this.state.apps.map((app)=>{
+      var background = `url(${app.background})`;
 
-  setApp(app){
-    this.setState({currentApp:app})
+      return(
+        <div className="col-1 appBox" onClick = {()=>{
+          this.setState({currentApp:app});
+        }}>
+          <div className="appBackground"style={{background:background}}>
+            <img className={"appLogo " + app.className} src={app.image}/>
+          </div>
+          <h2 className="appNamer">{app.name}</h2>
+        </div>
+      )
+    })
   }
   resetState(){
     this.setState({currentApp:false});
   }
+  renderLanguages(){
 
+      var langs = [];
+      var i =0;
+        for(var i =0;i<this.state.currentApp.languages.length -1;i++){
+        langs.push(
+          <div className="languagesL">
+            <img className="languageLC" src={this.state.currentApp.languages[i].image} />
+            <p className="lll">{this.state.currentApp.languages[i].name}</p>
+
+          </div>
+        )
+    }
+    return langs;
+  }
+  renderDiff(){
+    var boxes=[];
+    for(var i=0;i<this.state.currentApp.difficulty;i++){
+      boxes.push(<div className={"diffSeg  diff"+i}/>)
+    }
+    return boxes;
+  }
   loader(){
 
     this.setState({loading:true})
   }
-
   render(){
     var background = `url(${this.state.currentApp.background})`;
     if(this.state.loading){
-      return <Loader background = {background}/>
+      return(
+        <div className="animator" style={{background:background,paddingBottom:"50%",backgroundSize:"cover"}}>
+            <div className="navbarAppC">
+                <Navbar changeURL={this.props.changeURL}/>
+            </div>
+            <div className="row1">
+                <div className="cornerBox"style={{background:background}}>
+                  <img className="cornerLogo" src={this.state.currentApp.image} />
+                </div>
+
+            </div>
+
+            <div className="row2">
+
+
+                <div className="col-6 jumbotron jumbotrons">
+                  <h4 className="titleCurrent">{this.state.currentApp.name}</h4>
+                  <div className="jumboRow1">
+                      <img src="images/loader.gif" className="loaderC"/>
+                  </div>
+                  <div className="jumboRow1">
+                      <h6 className="howToPlay">Coded in:</h6>
+                      <div className="languageBoxer">
+                          {this.renderLanguages()}
+                      </div>
+                  </div>
+                  <div className="jumboRow2">
+                      <h6 className="howToPlay">Complexity:</h6>
+                      <div className="diffBox">
+                        {this.renderDiff()}
+                      </div>
+                  </div>
+
+                  <a href={this.state.currentApp.link}><button onClick = {()=>{this.loader()}}className="btn btns  btn-danger">Check it out</button></a>
+
+                </div>
+            </div>
+        </div>
+      )
     }
-    else if(this.state.currentApp){
-      return <CurrentApp loader = {this.loader} changeURL = {this.props.changeURL} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages}currentApp = {this.state.currentApp} />
-    }
-    else{
-      return <AllApps setApp = {this.setApp} changeURL = {this.props.changeURL} apps = {this.state.apps} />
-    }
-  }
+  else  if(this.state.currentApp){
+
+      return (
+        <div className="animator" style={{background:background,paddingBottom:"10%",backgroundSize:"cover"}}>
+            <div className="navbarAppC">
+                <Navbar changeURL={this.props.changeURL}/>
+            </div>
+            <div className="row1">
+                <div className="cornerBox"style={{background:background}}>
+                  <img className="cornerLogo" src={this.state.currentApp.image} />
+                </div>
+
+            </div>
+
+            <div className="row2">
+
+
+                <div className="col-6 jumbotron jumbotrons">
+                  <h4 className="titleCurrent">{this.state.currentApp.name}</h4>
+                  <div className="jumboRow1">
+                      <h4 className="howToPlay">How To Play</h4>
+                      <p className="howToPlay how">
+                        Tap as many ghosts as possible before they cover your whole screen!
+                      </p>
+                  </div>
+                  <div className="jumboRow1">
+                      <h6 className="howToPlay">Coded in:</h6>
+                      <div className="languageBoxer">
+                          {this.renderLanguages()}
+                      </div>
+                  </div>
+                  <div className="jumboRow2">
+                      <h6 className="howToPlay">Complexity:</h6>
+                      <div className="diffBox">
+                        {this.renderDiff()}
+                      </div>
+                  </div>
+
+                  <a ><button onClick = {()=>{this.loader()}} className="btn btns  btn-danger">Check it out</button></a>
+
+                </div>
+            </div>
+        </div>
+      );
+    }else{
+    return (
+        <div className="container-fluid pad100"style={{background:"url('images/mosaic.png')"}}>
+          <div className=" bb">
+            <Navbar changeURL = {this.props.changeURL}/>
+
+          </div>
+            <div className="appContainer">
+                <h2 className="appTitle">My Apps</h2>
+
+                  <div className="row">
+                      {this.renderAllApps()}
+
+                  </div>
+            </div>
+
+        </div>
+
+  );
+}
+}
 }
 
 export default AppPage;

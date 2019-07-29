@@ -34,7 +34,7 @@ class AppContainer extends React.Component{
     var i =1;
     return this.state.samples.map((app)=>{
 
-      return <div className="col-2"><AppSample  app = {app}/></div>
+      return <AppSample  app = {app}/>
 
     })
   }

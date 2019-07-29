@@ -41,6 +41,9 @@
 
   font-family: monospace;
 }
+.center{
+  text-align: center;
+}
 .currentTp{
   text-align: center;
   font-weight: bold;
@@ -441,15 +444,15 @@ position: relative;
   margin-left:10%;
 
   border:2px solid black;
-  height:200px;
+
 
 }
 .appImageBox{
   height:50%;
-  border-radius:3px;
+  border-radius:10px;
 }
 .appLogos{
-  width:70%;margin-left:15%;marginTop:5%
+  width:90% !important;
 }
 .appBox{
   top:10px;
@@ -458,14 +461,18 @@ position: relative;
   border:5px solid none;
   animation:goDown .2s 1 ease-in;
 }
+.pad100{
+  padding-bottom:500px !important;
+}
+.appBox{
+  padding-bottom:20px !important;
+}
 .appBox:hover{
   color:white;
   background:black;
 }
 .appBox:hover{
-
   top:-10px;
-  position:relative;
   border-color: red;
   animation :goUp 1 ease-in .2s;
 }
