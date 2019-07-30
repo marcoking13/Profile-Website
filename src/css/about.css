@@ -23,7 +23,7 @@
 .crol{
   width:200px;
   height:250px;
-  margin-left: 15%;
+  margin-left: 20%;
 
 }
 @keyframes slide{
@@ -43,11 +43,12 @@
   margin-left: 20%;
 }
 @media screen and (max-width:480px){
-  .detCon{margin-left:0%;}
+  .detCon{margin-left:5%;}
   .aboutMeCon{
     margin-top:10%;
     font-size: 13px;
     padding: 5px;
+
   }
 }
 .aboutMe{
