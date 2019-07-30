@@ -73,7 +73,7 @@ class AppCurrent extends React.Component {
       )
     }else{
         return (
-          <div className="container-fluid"style={{background:this.props.background,paddingBottom:"10%",backgroundSize:"cover"}}>
+          <div className="container-fluid"style={{background:this.props.background,paddingBottom:"900px",backgroundSize:"cover"}}>
             <NavbarMobile changeURL = {this.props.changeURL} />
               <div>
                 <div className="col-12 mlop jumbotron jumbotrons">
