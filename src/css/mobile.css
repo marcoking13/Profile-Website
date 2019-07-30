@@ -1,0 +1,220 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  opacity:1;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav p:hover{
+  background:#f4f4f4;
+  color:black !important;
+}
+.titleM{
+  text-align: center;
+  padding-top: 10% !important;
+  color:white !important;
+
+  font-size: 20px;
+
+}
+.langBM{
+  width:100%;
+
+  float:left;
+  margin-top: 2.5%;
+
+}
+.langBarM{
+  width:50%;
+  background:black;
+  float:left;
+  margin-left: 5%;
+  height:20px;
+  margin-top: 2.5%;
+}
+.langTM{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.dffm{
+  width:15px;
+  height:20px;
+  border:1px solid black;
+  float:left;
+  background:red !important;
+}
+.langNM{
+  float:left;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.pb50{
+  padding-bottom:100px;
+}
+.appContainerM{
+  clear:both;
+
+  margin-top: 50px;
+  width:100%;
+}
+.appTTM{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.resumeBoxM{
+  margin-top: 90%;
+}
+.appNameMM{
+  color:white;
+  text-align: center;
+}
+.appBoxM{
+  width:50%;
+  float:left;
+  background:black;
+  border-radius:10px;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+.appImgMM{
+  width:90%;
+  margin-left: 5%;
+
+}
+.resBB{
+  background:white;
+  border:2px solid black;
+  margin-left: 12.5%;
+  float:left;
+}
+.langIM{
+  width:10%;
+  float:left;
+  margin-left: 5%;
+
+}
+.resM{
+  text-align: center;
+  font-weight: bold;
+}
+.profileButtonM{
+  width:50%;
+  margin-top: 5%;
+  margin-left: 25%;
+  background:white;
+  border: 2px solid black;
+}
+.pb{
+
+  padding-bottom:50px !important;
+
+}
+.profileNM{
+  color:white;
+  text-align: center;
+  margin-top:5%;
+}
+.redA{
+  color:red !important;
+}
+.list{
+  margin-top:15%;
+}
+.profileA{
+  width:50%;
+  margin-left:25%;
+}
+/* The navigation menu links */
+.sidenav p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey ;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav p:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.upAddress{
+  border:1px solid grey;
+  color: #f6f6f6;
+  text-align: center;
+  padding:5px;
+
+
+}
+
+.searchM{
+  width:100%;
+
+  background:black;
+  color:white;
+
+  border-color:none;
+}
+.adM{
+
+  width:90%;
+  margin-left:5%;
+  color:white;
+  border:none;
+  margin-top: 5%;
+  border-bottom:1px solid white;
+  background:black;
+  text-align: center;
+
+}
+.zipM{
+  width:35%;
+  float:left;
+  margin-left:5%;
+}
+.menuIC{
+  position: absolute;
+  top:3%;
+  left:5%;
+}
+.menuBarI{
+
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.bb{
+  background:black;
+  padding-bottom:30px;
+}

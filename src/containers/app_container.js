@@ -1,32 +1,12 @@
 import React from "react";
 import AppSample from "./../components/app_sample";
+import SampleApps from "./../config/sampleApps.js";
 
 class AppContainer extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      samples:[
-        {
-          name:"Submarine Run",
-          image:"images/submarine.png",
-          background:"url('images/subrun.jpg')",
-          link:"https://sableye12.itch.io/submarine-run"
-        },
-
-        {
-          name:"EZ Eatz",
-          image:"images/ezeatz.png",
-          background:"url('images/ezeatzb.jpg')",
-          link:""
-        },
-        {
-          name:"Star Bash",
-          image:"images/starbash.png",
-          background:"url('images/starbashb.png')",
-          link:"https://www.sharemygame.com/share/ad81c918-adfc-4357-8c08-7223c34efb51"
-        },
-
-      ]
+      samples: SampleApps
     }
   }
 
@@ -45,11 +25,9 @@ class AppContainer extends React.Component{
       <div>
         <h2 className="appTitle bcc">My Apps</h2>
         <div className="row appContainer">
+
           <div className="col-3"/>
-
-          {this.renderApps()}
-
-
+            {this.renderApps()}
           <div className="col-2"/>
 
         </div>

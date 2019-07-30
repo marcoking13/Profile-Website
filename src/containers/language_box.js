@@ -1,6 +1,8 @@
 import React from "react";
 import AppBubble from "./../components/app_bubble";
 
+import Languages from "./../config/languages.js";
+
 class LanguageBox extends React.Component{
 
   constructor(props){
@@ -9,38 +11,7 @@ class LanguageBox extends React.Component{
 
       current:"bl1",
 
-      languages:[
-        {
-          name:"C#",
-          image:"images/c.png",
-          leve:"5"
-        },
-        {
-          name:"HTML",
-          image:"images/css.png",
-          leve:"8"
-        },
-        {
-          name:"Javascript",
-          image:"images/javascript.png",
-          leve:"9"
-        },
-        {
-          name:"MERN",
-          image:"images/mern.png",
-          leve:"7"
-        },
-        {
-          name:"Unity",
-          image:"images/unity.png",
-          leve:"6"
-        },
-        {
-          name:"Java",
-          image:"images/java.png",
-          leve:"3"
-        },
-    ]
+      languages:Languages
     }
     this.changeCurrent = this.changeCurrent.bind(this);
   }

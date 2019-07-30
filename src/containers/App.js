@@ -24,10 +24,7 @@ class App extends React.Component {
     this.setState({url:url})
   }
   render(){
-    if(window.innerWidth <= 580){
-      return <Error />
-    }
-      else if(this.state.url == "home"){
+   if(this.state.url == "home"){
         return <HomePage changeURL = {this.changeURL}/>
       }
     else  if(this.state.url == "about"){
