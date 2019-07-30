@@ -44,25 +44,22 @@ class HomePageMobile extends React.Component {
 
               </div>
                 <br />
-                    <br />
-                        <br />
-                        <br />
-                            <br />
-                            <br />
-                                <br />
-                                    <br />
-                                    <br />
-                                        <br />
-                                            <br />
-                                <br />
-                                <br />
-                                    <br />
-                                        <br />
-                                        <br />
-                                            <br />
-                                            <br />
-                                                <br />
-                                                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
               <div className="resumeBoxM ">
                   <div className="buttonMBox">
                       <p className="resM"> Resume </p>
