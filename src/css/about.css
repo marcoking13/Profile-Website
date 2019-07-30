@@ -43,7 +43,7 @@
   margin-left: 20%;
 }
 @media screen and (max-width:480px){
-  .detCon{margin-left:5%;}
+  .detCon{margin-left:10%;}
   .aboutMeCon{
     margin-top:10%;
     font-size: 13px;
