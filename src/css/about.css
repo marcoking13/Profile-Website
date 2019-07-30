@@ -20,6 +20,12 @@
 .animator{
   animation:slide .15s 1 ease-in;
 }
+.crol{
+  width:200px;
+  height:250px;
+  margin-left: 15%;
+
+}
 @keyframes slide{
   0%{
     opacity:0;
@@ -35,6 +41,14 @@
   padding-top: 5px;
   padding-right: 10px;
   margin-left: 20%;
+}
+@media screen and (max-width:480px){
+  .detCon{margin-left:0%;}
+  .aboutMeCon{
+    margin-top:10%;
+    font-size: 13px;
+    padding: 5px;
+  }
 }
 .aboutMe{
   line-height: 2;
