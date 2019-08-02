@@ -1,9 +1,16 @@
 import React from "react";
 import Navbar from "./nav_bar";
 import NavbarMobile from "./mobile_nav_bar";
+import CurrentDesktop from "./desktop_current_app.js";
+import CurrentMobile from "./mobile_current_app.js";
+
 class AppCurrent extends React.Component {
   constructor(props){
     super(props);
+    this.renderLanguages = this.renderLanguages.bind(this);
+    this.renderDiff = this.renderDiff.bind(this);
+
+    window.scrollTo(0,0);
   }
   renderLanguages(){
 
@@ -28,81 +35,23 @@ class AppCurrent extends React.Component {
     return boxes;
   }
   render(){
+
       if(window.innerWidth >= 590){
         return (
           <div className="animator" style={{background:this.props.background,paddingBottom:"10%",backgroundSize:"cover"}}>
-              <div className="navbarAppC">
-                  <Navbar changeURL={this.props.changeURL}/>
-                </div>
-                <div className="row1">
-                  <div className="cornerBox"style={{background:this.props.background}}>
-                    <img className="cornerLogo" src={this.props.currentApp.image} />
-                  </div>
-
-                  </div>
-
-                  <div className="row2">
-
-
-                    <div className="col-6 jumbotron jumbotrons">
-                      <h4 className="titleCurrent">{this.props.currentApp.name}</h4>
-                      <div className="jumboRow1">
-                      <h4 className="howToPlay">How To Play</h4>
-                      <p className="howToPlay how">
-                        Tap as many ghosts as possible before they cover your whole screen!
-                      </p>
-                  </div>
-                    <div className="jumboRow1">
-                        <h6 className="howToPlay">Coded in:</h6>
-                        <div className="languageBoxer">
-                            {this.renderLanguages()}
-                        </div>
-                      </div>
-                      <div className="jumboRow2">
-                        <h6 className="howToPlay">Complexity:</h6>
-                        <div className="diffBox">
-                          {this.renderDiff()}
-                        </div>
-                      </div>
-
-                      <a href={this.props.currentApp.link}><button onClick = {()=>{this.props.loader()}} className="btn btns  btn-danger">Check it out</button></a>
-
-                    </div>
-                  </div>
-                </div>
+          <div className="navbarAppC">
+              <Navbar changeURL={this.props.changeURL}/>
+            </div>
+              <CurrentDesktop renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
+          </div>
       )
     }else{
         return (
           <div className="container-fluid"style={{background:this.props.background,paddingBottom:"900px",backgroundSize:"cover"}}>
             <NavbarMobile changeURL = {this.props.changeURL} />
-              <div>
-                <div className="col-12 mlop jumbotron jumbotrons">
-                  <h4 className="titleCurrent ">{this.props.currentApp.name}</h4>
-                  <div className="jumboRow1">
-                  <h4 className="howToPlay">How To Play</h4>
-                  <p className="howToPlay how">
-                    Tap as many ghosts as possible before they cover your whole screen!
-                  </p>
-                </div>
-                <div className="jumboRow1">
-                    <h6 className="howToPlay">Coded in:</h6>
-                    <div className="languageBoxer">
-                      {this.renderLanguages()}
-                    </div>
-                  </div>
-                  <div className="jumboRow2">
-                    <h6 className="howToPlay compM">Complexity:</h6>
-                  <div className="diffBox">
-                      {this.renderDiff()}
-                    </div>
-                  </div>
+            <CurrentMobile renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
+          </div>
 
-                  <a href={this.props.currentApp.link}><button onClick = {()=>{this.props.loader()}} className="btn btns  btn-danger">Check it out</button></a>
-
-                  </div>
-
-                </div>
-              </div>
         )
       }
     }

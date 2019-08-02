@@ -142,26 +142,7 @@ module.exports = [
     className:"subL"
 
   },
-  {
-    name:"Falling Gems",
-    link:"https://www.sharemygame.com/share/a011bcf9-e57e-4afc-bb0f-ba9841f897ed",
-    difficulty:4,
-    languages:[
-      {
-        image:"images/c.png",
-        name:"C#"
-      },
-      {
-        image:"images/unity.png",
-        name:"Unity"
-      }
-    ],
-    about:"",
-    image:"images/gem.png",
-    background:"images/mm.png",
-    className:"gem"
-
-  },
+  
   {
   name:"Wizards VS Robots",
   link:"https://sableye12.itch.io/wizards-vs-robots",

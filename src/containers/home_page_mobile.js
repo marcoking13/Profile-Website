@@ -10,6 +10,7 @@ class HomePageMobile extends React.Component {
     this.state = {
       samples: Samples
     }
+        window.scrollTo(0,0);
   }
   render(){
     return (

@@ -20,12 +20,7 @@
 .animator{
   animation:slide .15s 1 ease-in;
 }
-.crol{
-  width:200px;
-  height:250px;
-  margin-left: 20%;
 
-}
 @keyframes slide{
   0%{
     opacity:0;
@@ -47,12 +42,27 @@
   .aboutMeCon{
     margin-top:10%;
     font-size: 13px;
-    padding: 5px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 100px !important;
 
   }
+  .circle-image{
+    width:200px;
+    height:250px;
+    margin-left: 20%;
+
+  }
+
 }
 .aboutMe{
   line-height: 2;
+  padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 5%;
+    padding-bottom: 100px;
+
+
 }
 .detailCon{
   border: 2px solid #f4f4f4;

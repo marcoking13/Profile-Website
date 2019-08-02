@@ -9,7 +9,7 @@
   opacity:1;
   background-color: black; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 40px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .sidenav p:hover{
@@ -23,6 +23,42 @@
 
   font-size: 20px;
 
+}
+@keyframes glowup{
+  0%{
+    border-color:inherit
+  }
+  100%{
+    border-color:red;
+    border-width:4px;
+
+  }
+}
+@keyframes glowdown{
+  0%{
+    border-color:red
+  }
+  100%{
+    border-color:white;
+    border-width:1px;
+  }
+}
+.appBoxM{
+  animation: glowdown ease-in 1 .3s;
+  border-width:1px;
+  border-color:white;
+}
+.appBoxM:hover{
+  animation: glowup ease-in 1 .3s;
+  border-color:red;
+  border-width:4px;
+
+}
+.marco{
+  text-align: center;
+  color:white;
+  font-size: 12px !important;
+  margin-right: 10%;
 }
 .langBM{
   width:100%;
@@ -132,20 +168,29 @@
   color:red !important;
 }
 .list{
-  margin-top:15%;
+  margin-top:5%;
 }
 .profileA{
   width:50%;
   margin-left:25%;
 }
+.profileImg{
+  width:50%;
+  margin-left: 25%;
+}
 /* The navigation menu links */
 .sidenav p {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: grey ;
+  font-size: 20px;
+  color: #f4f4f4 ;
   display: block;
   transition: 0.3s;
+}
+
+.bw{
+  background:white !important;
+  color: black !important;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -156,10 +201,12 @@
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: -1%;
+  color:white;
   right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+
+  font-size: 26px;
+  margin-left: 70px;
 }
 .upAddress{
   border:1px solid grey;

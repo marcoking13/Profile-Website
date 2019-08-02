@@ -1,15 +1,12 @@
 import React from 'react';
 import "./../css/style.css";
+
 import Navbar from "./../components/nav_bar.js";
-import Showcase from "./../components/showcase.js";
-import LanguageBox from "./language_box";
-import AppContainer from "./app_container.js";
-
-import Error from "./error.js";
-
+import Error from "./../components/error.js";
 import HomePage from "./home_page.js";
 import AppPage from "./app_page.js";
 import AboutPage from "./about_page";
+
 class App extends React.Component {
   constructor(props){
     super(props);

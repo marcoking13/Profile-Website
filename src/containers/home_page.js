@@ -2,13 +2,16 @@ import React from 'react';
 import "./../css/style.css";
 import Navbar from "./../components/nav_bar.js";
 import Showcase from "./../components/showcase.js";
-import LanguageBox from "./language_box";
-import AppContainer from "./app_container.js";
-import HobbyContainer from "./hobby_container_main";
+import LanguageBox from "./../components/language_box";
+import AppContainer from "./../components/app_container.js";
 import HomePageMobile from "./home_page_mobile";
 
 class HomePage extends React.Component {
-  render(){
+  constructor(props){
+    super(props);
+    window.scrollTo(0,0);
+  } 
+   render(){
     if(window.innerWidth <= 590){
       return(
         <HomePageMobile changeURL = {this.props.changeURL} />
@@ -45,23 +48,8 @@ class HomePage extends React.Component {
               <AppContainer changeURL={this.props.changeURL} />
             </div>
 
-            <div className="purpBorder ">
-              <HobbyContainer />
-            </div>
 
-            <div className="prupB">
-                <h6 className="cM">Contact Me </h6>
 
-                <div className="contactBC">
-
-                  <button className="btn contactButtons"><img src="images/mail.png"className="insta"/>Marcokhodr16@gmail.com</button>
-                  <button className="btn contactButtons"><img src="images/phone.png"className="insta"/>480-822-0511</button>
-                  <button className="btn contactButtons"><img src="images/insta.png"className="insta"/>Instagram</button>
-                  <button className="btn contactButtons"><img src="images/linker.png"className="insta"/>Linkden</button>
-
-                </div>
-
-              </div>
 
             </div>
 

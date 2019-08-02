@@ -2,8 +2,8 @@ import React from 'react';
 import "./../css/app.css";
 import Navbar from "./../components/nav_bar.js";
 import Showcase from "./../components/showcase.js";
-import LanguageBox from "./language_box";
-import AppContainer from "./app_container.js";
+
+
 import AppLoading from "./../components/app_loader_component";
 import Apps from "./../config/myApps.js";
 import AllApps from "./../components/all_apps_component";
@@ -20,6 +20,8 @@ class AppPage extends React.Component {
     }
     this.loader = this.loader.bind(this);
     this.setApp = this.setApp.bind(this);
+
+        window.scrollTo(0,0);
   }
 
   resetState(){

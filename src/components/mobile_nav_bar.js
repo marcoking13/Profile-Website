@@ -18,7 +18,8 @@ class MobileNavBar extends React.Component {
         <div id="mySidenav" className="sidenav">
           <div className="closebtn" onClick={()=>{this.closeNav()}}>&times;</div>
 
-
+              <img className="profileImg" src="./images/marco.PNG"/>
+                <p className="marco">Marco Khodr </p>
             <div className="list">
               <p
                 onClick={()=>{
@@ -39,10 +40,7 @@ class MobileNavBar extends React.Component {
                       this.props.changeURL("home");
                     }}>Resume</p>
 
-                    <p
-                      onClick={()=>{
-                        this.props.changeURL("home");
-                      }}>Contact</p>
+                    
 
                   </div>
                 </div>
