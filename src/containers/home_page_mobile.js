@@ -12,16 +12,37 @@ class HomePageMobile extends React.Component {
     }
         window.scrollTo(0,0);
   }
+
+  renderMobileHobbies(){
+    return this.state.hobbies.map((hobby)=>{
+        return (
+          <div className="col-6">
+              <img className="hobbyIM" src = {hobby.image}/>
+              <p className="hobbyTM">{hobby.text}</p>
+          </div>
+        )
+    });
+  }
   render(){
     return (
         <div className="pb50">
             <MobileNav changeURL = {this.props.changeURL} />
+
 
             <div className="container-fluid pb"style={{background:"url('images/mosaic.png')"}}>
 
                 <h2 className="titleM">Lets Build Something Amazing Together </h2>
                 <button className="profileButtonM">About Me </button>
             </div>
+
+
+                          <div className="resumeBoxMm ">
+                              <div className="buttonMBox">
+                                  <p className="resM"> Resume </p>
+                                  <button className="resBB">My Resume</button>
+                                  <button className="resBB">My Github</button>
+                              </div>
+                          </div>
 
               <div>
                   <LanguageMeter />
@@ -44,37 +65,7 @@ class HomePageMobile extends React.Component {
                   </div>
 
               </div>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
 
-
-              <div className="resumeBoxM ">
-                  <div className="buttonMBox">
-                      <p className="resM"> Resume </p>
-                      <button className="resBB">My Resume</button>
-                      <button className="resBB">My Github</button>
-                  </div>
-              </div>
 
 
         </div>

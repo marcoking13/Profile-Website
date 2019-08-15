@@ -6,6 +6,25 @@
   margin-left:5%;
   font-size: 20px;
 }
+.hobbyTT{
+  text-align:center;
+  margin-top:2.5%;
+  font-family: monospace;
+  font-size:17px;
+  font-weight:bold;
+
+  padding-bottom:2.5%;
+}
+.hobbyShow{
+  border-radius:10px;
+  border:4px solid white;
+  height:250px;
+  width:100%;
+}
+.hobbyShow:hover{
+  border-color:red;
+}
+.hobbyText{text-align:center;position:relative;bottom:50%;background:#262626;color:white;padding:10px;width:97%;margin-left:1.5%}
 .mlop{
   margin:0 !important;
   padding-bottom:50px;

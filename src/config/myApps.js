@@ -123,7 +123,7 @@ module.exports = [
   },
   {
     name:"Star Bash",
-    link:"https://www.sharemygame.com/share/ad81c918-adfc-4357-8c08-7223c34efb51",
+    link:"https://sableye12.itch.io/star-bash",
     difficulty:6,
     image:"images/starbash.png",
     languages:[
@@ -142,7 +142,28 @@ module.exports = [
     className:"subL"
 
   },
-  
+  {
+    name:"Dragon Quest (Proto)",
+    link:"https://sableye12.itch.io/dragon-quest",
+    difficulty:6,
+    image:"images/dragon.png",
+    languages:[
+      {
+        image:"images/c.png",
+        name:"C#"
+      },
+      {
+        image:"images/unity.png",
+        name:"Unity"
+      }
+    ],
+    about:"",
+    lImage:"images/unity.png",
+    background:"images/dragons.png",
+    className:"subL"
+
+  },
+
   {
   name:"Wizards VS Robots",
   link:"https://sableye12.itch.io/wizards-vs-robots",

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./../css/style.css";
+import Hobbies from "./../config/hobbies.js";
 import Navbar from "./../components/nav_bar.js";
 import Showcase from "./../components/showcase.js";
 import LanguageBox from "./../components/language_box";
@@ -10,7 +11,22 @@ class HomePage extends React.Component {
   constructor(props){
     super(props);
     window.scrollTo(0,0);
-  } 
+    this.state = {
+      hobbies:Hobbies
+    }
+  }
+
+  renderHobbies(){
+    return this.state.hobbies.map((hobby)=>{
+      return(
+        <div  className="col-2">
+          <img className="hobbyShow"src={hobby.image}/>
+          <p className="hobbyText" >{hobby.name}</p>
+        </div>
+      )
+    });
+  }
+
    render(){
     if(window.innerWidth <= 590){
       return(
@@ -47,6 +63,17 @@ class HomePage extends React.Component {
             <div className="purpBorder">
               <AppContainer changeURL={this.props.changeURL} />
             </div>
+
+
+            <div className="purpBorder container-fluid">
+              <p className="hobbyTT">Hobbies</p>
+              <div className="row">
+                {this.renderHobbies()}
+              </div>
+
+            </div>
+
+
 
 
 

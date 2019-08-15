@@ -16,7 +16,7 @@ module.exports = [
     name:"Star Bash",
     image:"images/starbash.png",
     background:"url('images/starbashb.png')",
-    link:"https://www.sharemygame.com/share/ad81c918-adfc-4357-8c08-7223c34efb51"
+    link:"https://sableye12.itch.io/star-bash"
   },
 
 ]
