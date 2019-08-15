@@ -32,7 +32,9 @@ class HomePageMobile extends React.Component {
             <div className="container-fluid pb"style={{background:"url('images/mosaic.png')"}}>
 
                 <h2 className="titleM">Lets Build Something Amazing Together </h2>
-                <button className="profileButtonM">About Me </button>
+                <button className="profileButtonM" onClick = {()=>{
+                  this.props.changeURL("about")}}
+                >About Me </button>
             </div>
 
 
@@ -44,28 +46,29 @@ class HomePageMobile extends React.Component {
                               </div>
                           </div>
 
-              <div>
+              <div style={{paddingBottom:"200px"}}>
                   <LanguageMeter />
               </div>
 
-              <div className="appContainerM">
+              <div className="appContainerM" >
                 <br />
-                <h6 className="appTTM">My Apps</h6>
-                  <div className="appBoxM">
+                <h6 className="appTTM"style={{top:"50px",paddingTop:"0"}}>My Apps</h6>
+                  <a href= {this.state.samples[0].link}>  <div className="appBoxM" >
                       <img className="appImgMM" src={this.state.samples[0].image}/>
                       <p className="appNameMM">{this.state.samples[0].name}</p>
-                  </div>
-                  <div className="appBoxM">
+                  </div></a>
+                  <a href= {this.state.samples[1].link}><div className="appBoxM">
                       <img className="appImgMM" src = {this.state.samples[1].image}/>
                       <p className="appNameMM">{this.state.samples[1].name}</p>
                   </div>
-                  <div className="appBoxM">
-                      <img className="appImgMM" src={this.state.samples[2].image}/>
-                      <p className="appNameMM">{this.state.samples[2].name}</p>
-                  </div>
+                  </a>
 
+                    <button
+                      onClick = {()=>{
+                        this.props.changeURL("apps")
+                      }}
+                    className="btn checkoutApp"style={{width:"50%",marginLeft:"25%",marginTop:"10%"}}>See More</button>
               </div>
-
 
 
         </div>

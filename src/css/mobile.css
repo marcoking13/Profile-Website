@@ -97,7 +97,7 @@
 }
 .appContainerM{
   clear:both;
-
+  padding-bottom:200px;
   margin-top: 50px;
   width:100%;
 }
@@ -115,6 +115,13 @@
   color:white;
 
   text-align: center;
+}
+.checkoutApp{
+  border:2px solid black;
+}
+.checkoutApp:hover{
+  background:black;
+  color:white;
 }
 .appBoxM{
   width:50%;
