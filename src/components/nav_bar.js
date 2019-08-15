@@ -11,7 +11,13 @@ class NavBar extends React.Component{
         <div className="col-5"></div>
         <div className="col-5 navgroup">
           <p className="navChoice" onClick = {()=>{this.props.changeURL("home")}}>Home</p>
-          <p className="navChoice" onClick = {()=>{this.props.changeURL("apps")}}>Apps</p>
+          <p className="navChoice" onClick = {()=>{
+                if(this.props.resetState){
+                  this.props.resetState();
+                }else{
+                  this.props.changeURL("apps");
+                }
+              }}>Apps</p>
           <a href = "https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"className="navChoice"><p className="navChoice">Resume</p></a>
           <p className="navChoice"onClick = {()=>{this.props.changeURL("about")}}>About</p>
           <p className="navChoice contact">Contact</p>

@@ -40,16 +40,16 @@ class AppCurrent extends React.Component {
         return (
           <div className="animator" style={{background:this.props.background,paddingBottom:"10%",backgroundSize:"cover"}}>
           <div className="navbarAppC">
-              <Navbar changeURL={this.props.changeURL}/>
+              <Navbar resetState = {this.props.resetState} changeURL={this.props.changeURL}/>
             </div>
-              <CurrentDesktop renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
+              <CurrentDesktop resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
           </div>
       )
     }else{
         return (
           <div className="container-fluid"style={{background:this.props.background,paddingBottom:"900px",backgroundSize:"cover"}}>
-            <NavbarMobile changeURL = {this.props.changeURL} />
-            <CurrentMobile renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
+            <NavbarMobile resetState = {this.props.resetState} changeURL = {this.props.changeURL} />
+            <CurrentMobile resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
           </div>
 
         )

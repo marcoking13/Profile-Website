@@ -18,8 +18,10 @@ class AppPage extends React.Component {
       loading:false,
       apps:Apps
     }
+    
     this.loader = this.loader.bind(this);
     this.setApp = this.setApp.bind(this);
+    this.resetState = this.resetState.bind(this);
 
         window.scrollTo(0,0);
   }
@@ -38,13 +40,13 @@ class AppPage extends React.Component {
   render(){
     var background = `url(${this.state.currentApp.background})`;
     if(this.state.loading){
-      return <AppLoading loader = {this.loader} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp} background = {background} />
+      return <AppLoading loader = {this.loader} resetState={this.resetState} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp} background = {background} />
     }
     else if(this.state.currentApp){
-      return <AppCurrent loader = {this.loader} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp}  background = {background}/>
+      return <AppCurrent loader = {this.loader} resetState={this.resetState} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp}  background = {background}/>
     }
     else{
-      return <AllApps setApp = {this.setApp} changeURL = {this.props.changeURL} changeURL = {this.props.changeURL} apps = {this.state.apps} />
+      return <AllApps setApp = {this.setApp} resetState={this.resetState}changeURL = {this.props.changeURL} changeURL = {this.props.changeURL} apps = {this.state.apps} />
     }
 
   }

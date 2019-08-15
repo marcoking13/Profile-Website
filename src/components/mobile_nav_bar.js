@@ -32,7 +32,11 @@ class MobileNavBar extends React.Component {
                   }}
                   >About</p>
                   <p onClick={()=>{
-                    this.props.changeURL("apps");
+                    if(this.props.resetState){
+                      this.props.resetState();
+                    }else{
+                      this.props.changeURL("apps");
+                    }
                   }}>Apps</p>
 
                   <p
@@ -40,7 +44,7 @@ class MobileNavBar extends React.Component {
                       this.props.changeURL("home");
                     }}>Resume</p>
 
-                    
+
 
                   </div>
                 </div>

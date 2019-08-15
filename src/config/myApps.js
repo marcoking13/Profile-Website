@@ -18,7 +18,7 @@ module.exports = [
       }
 
     ],
-    about:"",
+    about:"Find and order from foodtrucks near you!",
     image:"images/ezeatz.png",
     background:"images/ezeatzb.jpg",
     className:"subL"
@@ -44,7 +44,7 @@ module.exports = [
       }
 
     ],
-    about:"",
+    about:"Find coding events near you and learn how to code with codex's interface",
     image:"images/codex.svg",
     background:"images/codexb.jpg",
     className:"codexL"
@@ -69,7 +69,7 @@ module.exports = [
       }
 
     ],
-    about:"",
+    about:"Tap as many ghosts as possible before they cover your whole screen!",
     image:"images/boo.png",
     background:"images/or.jpg",
     className:"subL"
@@ -94,7 +94,7 @@ module.exports = [
       }
 
     ],
-    about:"",
+    about:"Test your typing skills to save the universe",
     image:"images/planetD.png",
     background:"images/space2.jpg",
     className:"subL"
@@ -115,7 +115,7 @@ module.exports = [
         name:"Unity"
       }
     ],
-    about:"",
+    about:"How deep can you into the ocean?",
     image:"images/submarine.png",
     background:"images/blue.jpg",
     className:"subL"
@@ -136,7 +136,7 @@ module.exports = [
         name:"Unity"
       }
     ],
-    about:"",
+    about:"Slice all the stars to win! Beware of the fireballs though",
     lImage:"images/unity.png",
     background:"images/starbashb.png",
     className:"subL"
@@ -157,7 +157,7 @@ module.exports = [
         name:"Unity"
       }
     ],
-    about:"",
+    about:"Save the world from evil dragons",
     lImage:"images/unity.png",
     background:"images/dragons.png",
     className:"subL"
@@ -178,7 +178,7 @@ module.exports = [
       name:"Unity"
     }
   ],
-  about:"",
+  about:"Tower defense against the wizards and their monsters",
   image:"images/WvsRLogo.png",
   background:"images/wiz.jpg",
   className:""

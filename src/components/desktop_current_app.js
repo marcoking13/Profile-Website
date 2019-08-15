@@ -5,6 +5,7 @@ class MobileCurrentApp extends React.Component {
   render(){
     return(
       <div>
+          <img  onClick = {()=>{this.props.resetState()}}src="images/arrow.png"style={{position:"absolute",left:"5%",top:'15%',width:"60px",height:"50px"}}/>
         <div className="row1">
           <div className="cornerBox"style={{background:this.props.background}}>
             <img className="cornerLogo" src={this.props.currentApp.image} />
@@ -20,7 +21,7 @@ class MobileCurrentApp extends React.Component {
               <div className="jumboRow1">
               <h4 className="howToPlay">How To Play</h4>
               <p className="howToPlay how">
-                Tap as many ghosts as possible before they cover your whole screen!
+                {this.props.currentApp.about}
               </p>
           </div>
             <div className="jumboRow1">

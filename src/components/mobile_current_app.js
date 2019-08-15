@@ -5,12 +5,14 @@ class MobileCurrentApp extends React.Component {
   render(){
     return(
       <div>
+
         <div className="col-12 mlop jumbotron jumbotrons">
+          <img  onClick = {()=>{this.props.resetState()}} src="images/arrow.png"style={{width:"30px",height:"30px"}}/>
           <h4 className="titleCurrent ">{this.props.currentApp.name}</h4>
           <div className="jumboRow1">
           <h4 className="howToPlay">How To Play</h4>
           <p className="howToPlay how">
-            Tap as many ghosts as possible before they cover your whole screen!
+            {this.props.currentApp.about}
           </p>
         </div>
         <div className="jumboRow1">
