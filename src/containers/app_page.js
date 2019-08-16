@@ -18,7 +18,7 @@ class AppPage extends React.Component {
       loading:false,
       apps:Apps
     }
-    
+
     this.loader = this.loader.bind(this);
     this.setApp = this.setApp.bind(this);
     this.resetState = this.resetState.bind(this);
@@ -46,7 +46,7 @@ class AppPage extends React.Component {
       return <AppCurrent loader = {this.loader} resetState={this.resetState} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp}  background = {background}/>
     }
     else{
-      return <AllApps setApp = {this.setApp} resetState={this.resetState}changeURL = {this.props.changeURL} changeURL = {this.props.changeURL} apps = {this.state.apps} />
+      return <AllApps setApp = {this.setApp} resetState={this.resetState} changeURL = {this.props.changeURL} changeURL = {this.props.changeURL} apps = {this.state.apps} />
     }
 
   }

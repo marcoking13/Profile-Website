@@ -9,14 +9,22 @@ class LanguageBox extends React.Component{
     super(props);
     this.state = {
 
-      current:"bl1",
+      current:0,
 
       languages:Languages
     }
     this.changeCurrent = this.changeCurrent.bind(this);
   }
   changeCurrent(num){
-    this.setState({current:"bl"+num})
+    this.setState({current:num})
+  }
+  renderBars(){
+    var html = [];
+
+    for(var i = 0; i <this.state.current;i++){
+      html.push(<div style={{float:"left",height:"20px",width:"20px",border:"2px solid black",background:"red"}}className={"segs seg"+i}/>);
+    }
+    return html;
   }
 
   renderLanguages(){
@@ -40,7 +48,7 @@ class LanguageBox extends React.Component{
       <div className="complexBarBox">
           <p className="comName">Mastery</p>
           <div className="blackBarLevel">
-              <div className={"bloodLife "+this.state.current}/>
+              {this.renderBars()}
           </div>
       </div>
 

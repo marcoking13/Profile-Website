@@ -2,31 +2,31 @@ module.exports = [
   {
     name:"C#",
     image:"images/c.png",
-    leve:"5"
+    leve:"14"
   },
   {
     name:"HTML",
     image:"images/css.png",
-    leve:"8"
+    leve:"22"
   },
   {
     name:"Javascript",
     image:"images/javascript.png",
-    leve:"9"
+    leve:"24"
   },
   {
     name:"MERN",
     image:"images/mern.png",
-    leve:"7"
+    leve:"24"
   },
   {
     name:"Unity",
     image:"images/unity.png",
-    leve:"6"
+    leve:"16"
   },
   {
     name:"Java",
     image:"images/java.png",
-    leve:"3"
+    leve:"10"
   },
 ]

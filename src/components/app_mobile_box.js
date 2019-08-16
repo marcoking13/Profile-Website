@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./../css/mobileApp.css";
 
 class AppMobileBox extends React.Component {
   renderAllAppsMobile(){
@@ -7,13 +8,14 @@ class AppMobileBox extends React.Component {
       var background = `url(${app.background})`;
 
       return(
-        <div className="appBoxM" onClick = {()=>{
+        <div className="appBoxMo col-4" style={{marginTop:"2.5%",height:"150px"}} onClick = {()=>{
           this.props.setApp(app);
         }}>
-          <div className="appBackgroundM"style={{background:background}}>
-            <img className={"appLogoM"} src={app.image}/>
+          <div className="appBackgroundMo"style={{background:background,width:"100%",height:'100%',borderRadius:"10px",border:"black 4px solid"}}>
+            <img className={"appLogoMo"} style={{width:"50%",marginLeft:"25%",marginTop:"5%"}} src={app.image}/>
+              <p className="appNamerMo" style={{textAlign:"center",background:"black",color:"white",fontFamily:"monospace",position:"absolute",bottom:"5%",right:0,left:"12.5%",width:"75%"}}>{app.name}</p>
           </div>
-          <h2 className="appNamerM">{app.name}</h2>
+
         </div>
       )
     })
@@ -21,10 +23,11 @@ class AppMobileBox extends React.Component {
 
   render(){
     return (
-      <div className="appContainer" >
-          <h2 className="appTitle">My Apps</h2>
+      <div className="appContainer container-fluid" >
+          <h2 className="appTitle"style={{marginTop:"5%"}}>My Apps</h2>
 
-            <div>
+            <div className="row"style={{marginTop:"5%"}}>
+
                 {this.renderAllAppsMobile()}
 
             </div>
