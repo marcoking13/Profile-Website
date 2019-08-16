@@ -25,7 +25,7 @@ class LanguageMeter extends React.Component{
   renderCom(lang){
     var html = [];
     for(var i = 0; i<lang.leve; i++){
-        html.push(<div className="dffm"/>)
+        html.push(<div className="dffm" style={{width:"7px"}}/>)
     }
     return html;
   }

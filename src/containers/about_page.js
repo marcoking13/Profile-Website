@@ -22,7 +22,7 @@ class AboutContainer extends React.Component {
     window.scrollTo(0,0);
   }
   render(){
-    if(window.innerWidth >=590){
+    if(window.innerWidth >= 590){
       return(
           <div>
             <NavBar changeURL = {this.props.changeURL}/>
