@@ -1,6 +1,7 @@
 module.exports = [
   {
     name:"EZ-Eatz",
+    code:false,
     link:"",
     difficulty:8,
     languages:[
@@ -27,6 +28,7 @@ module.exports = [
   },
   {
     name:"Codex",
+      code:false,
     link:"https://marcoking13.github.io/Codex/",
     difficulty:7,
     languages:[
@@ -51,7 +53,60 @@ module.exports = [
 
   },
   {
+    name:"Divine Beats",
+      code:false,
+    link:"http://boomansion.herokuapp.com",
+    difficulty:8,
+    languages:[
+      {
+        image:"images/mern.png",
+        name:"React"
+      },
+      {
+        image:"images/css.png",
+        name:"CSS"
+      },
+      {
+        image:"images/javascript.png",
+        name:"Javascript"
+      }
+
+    ],
+    about:"Discover all kinds of music to create playlists and more!",
+    image:"images/musicB.png",
+    background:"images/musicbb.jpg",
+    className:"subL"
+
+  },
+  {
+    name:"React Showcase",
+      code:false,
+    link:"http://boomansion.herokuapp.com",
+    difficulty:5,
+    languages:[
+      {
+        image:"images/mern.png",
+        name:"React"
+      },
+      {
+        image:"images/css.png",
+        name:"CSS"
+      },
+      {
+        image:"images/javascript.png",
+        name:"Javascript"
+      }
+
+    ],
+    about:"My skill in React so far",
+    image:"images/reactL.png",
+    background:"images/uni.jpg",
+    className:"subL"
+
+  },
+  {
     name:"Boo Tap",
+      code:false,
     link:"http://boomansion.herokuapp.com",
     difficulty:7,
     languages:[
@@ -77,6 +132,7 @@ module.exports = [
   },
   {
     name:"Space Defender",
+      code:false,
     link:"http://powerful-temple-57799.herokuapp.com",
     difficulty:6,
     languages:[
@@ -103,6 +159,7 @@ module.exports = [
 
   {
     name:"Submarine Run",
+  code:"froggy1",
     link:"https://sableye12.itch.io/submarine-run",
     difficulty:7,
     languages:[
@@ -123,7 +180,8 @@ module.exports = [
   },
   {
     name:"Star Bash",
-    link:"https://sableye12.itch.io/star-bash",
+    code:"froggy1",
+    link:"https://sableye12.itch.io/star-slash",
     difficulty:6,
     image:"images/starbash.png",
     languages:[
@@ -144,7 +202,8 @@ module.exports = [
   },
   {
     name:"Dragon Quest (Proto)",
-    link:"https://sableye12.itch.io/dragon-quest",
+    code:"froggy1",
+    link:"https://sableye12.itch.io/dragon-quest-gl",
     difficulty:6,
     image:"images/dragon.png",
     languages:[
@@ -165,23 +224,24 @@ module.exports = [
   },
 
   {
-  name:"Wizards VS Robots",
-  link:"https://sableye12.itch.io/wizards-vs-robots",
-  difficulty:7,
-  languages:[
-    {
-      image:"images/c.png",
-      name:"C#"
-    },
-    {
-      image:"images/unity.png",
-      name:"Unity"
-    }
-  ],
-  about:"Tower defense against the wizards and their monsters",
-  image:"images/WvsRLogo.png",
-  background:"images/wiz.jpg",
-  className:""
+    name:"Wizards VS Robots",
+    code:"froggy1",
+    link:"https://sableye12.itch.io/wizard-vs-robots",
+    difficulty:7,
+    languages:[
+      {
+        image:"images/c.png",
+        name:"C#"
+      },
+      {
+        image:"images/unity.png",
+        name:"Unity"
+      }
+    ],
+    about:"Tower defense against the wizards and their monsters",
+    image:"images/WvsRLogo.png",
+    background:"images/wiz.jpg",
+    className:""
 
 }
 
