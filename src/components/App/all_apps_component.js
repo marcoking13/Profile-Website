@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./nav_bar";
-import MobileNav from "./mobile_nav_bar.js";
+import Navbar from "./../Navbar/nav_bar";
+import MobileNav from "./../Navbar/mobile_nav_bar.js";
 import AppMobileBox from "./app_mobile_box";
 import AppDesktopBox from "./app_desktop_box";
 class AllApps extends React.Component {

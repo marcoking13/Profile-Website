@@ -1,0 +1,73 @@
+.w100{
+  width:100%;
+}
+
+.mt10{
+  margin-top: 10%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.pb100px {
+  padding-bottom: 100px !important;
+}
+.mono{
+  font-family: monospace;
+}
+.fl{
+  float:left;
+}
+.f13{
+  font-size:13px !important;
+}
+.bold{
+  font-weight: bold;
+}
+.divider{
+  height:30px;
+  width:100%;
+}
+.h100{
+  height:100%;
+}
+.w200px{
+  width:200px !important;
+}
+.rb{
+  background:red !important;
+}
+.h30px{
+  height:30px;
+}
+.f17{
+  font-size: 17px;
+}
+.bb{
+  background:black;
+}
+.w7px{
+  width:7px;
+}
+
+.cw{
+  color:white;
+}
+.ml15{
+  margin-left:15%;
+}
+
+.purpleE{
+  border:2px solid purple;
+  color:purple;
+}
+
+.bWW{
+  border:2px solid white;
+}
+
+.turnRedE:hover{
+    color:red !important;
+    border-color:red !important;
+}

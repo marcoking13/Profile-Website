@@ -1,9 +1,9 @@
 import React from "react";
 
-import HobbyBubble from "./../components/hobby_bubble";
-import FavBubble from "./../components/favorite_bubble";
+import HobbyBubble from "./hobby_bubble";
+import FavBubble from "./favorite_bubble";
 
-import Hobbies from "./../config/hobbies.js";
+import Hobbies from "./../../config/hobbies.js";
 
 class HobbyContainer extends React.Component{
 
@@ -13,14 +13,15 @@ class HobbyContainer extends React.Component{
       fav:{},
       hobbies:Hobbies
     }
+
     this.setFav = this.setFav.bind(this);
+
   }
 
   renderHobbyBox(){
     return this.state.hobbies.map((hobby)=>{
-
       return <HobbyBubble setFav={this.setFav} hobby = {hobby} />
-  });
+    });
   }
 
   renderFavorite(){
@@ -28,9 +29,9 @@ class HobbyContainer extends React.Component{
       return this.state.fav.favs.map((fav)=>{
           return <FavBubble fav = {fav} />
       });
-  }else{
-    return <div />
-  }
+    }else{
+      return <div />
+    }
   }
 
   setFav(obj,target){

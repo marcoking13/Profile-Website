@@ -1,10 +1,10 @@
 import React from 'react';
 import "./../css/style.css";
 import Hobbies from "./../config/hobbies.js";
-import Navbar from "./../components/nav_bar.js";
-import Showcase from "./../components/showcase.js";
-import LanguageBox from "./../components/language_box";
-import AppContainer from "./../components/app_container.js";
+import Navbar from "./../components/Navbar/nav_bar.js";
+import Showcase from "./../components/Home/showcase.js";
+import LanguageBox from "./../components/Home/language_box";
+import AppContainer from "./../components/Home/app_container.js";
 import HomePageMobile from "./home_page_mobile";
 
 class HomePage extends React.Component {

@@ -1,7 +1,7 @@
 import React from "react";
-import AppBubble from "./../components/app_bubble";
+import AppBubble from "./app_bubble";
 
-import Languages from "./../config/languages.js";
+import Languages from "./../../config/languages.js";
 
 class LanguageBox extends React.Component{
 

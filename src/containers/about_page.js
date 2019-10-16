@@ -1,7 +1,7 @@
 import React from "react";
 import "./../css/about.css";
-import NavBar from "./../components/nav_bar";
-import NavBarMobile from "./../components/mobile_nav_bar.js";
+import NavBar from "./../components/Navbar/nav_bar";
+import NavBarMobile from "./../components/Navbar/mobile_nav_bar.js";
 import DesktopDetails from "./../components/details_desktop_component";
 import MobileDetails from "./../components/details_mobile_component";
 

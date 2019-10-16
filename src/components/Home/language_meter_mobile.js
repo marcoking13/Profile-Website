@@ -1,5 +1,5 @@
 import React from "react";
-import Languages from "./../config/languages.js";
+import Languages from "./../../config/languages.js";
 
 class LanguageMeter extends React.Component{
   constructor(props){
@@ -11,11 +11,17 @@ class LanguageMeter extends React.Component{
   renderLanguages(){
     return this.state.languages.map((language)=>{
         return (
-          <div className="langBM">
-              <img className="langIM" src = {language.image}/>
-              <p className="langNM">{language.name}</p>
-              <div className="langBarM">
-                  {this.renderCom(language)}
+          <div className="row">
+            <div className="col-2">
+              <img className="w100" src = {language.image}/>
+            </div>
+            <div className="col-3">
+                <p>{language.name}</p>
+            </div>
+              <div classNmae="col-5">
+                <div className="w200px h30px bb">
+                    {this.renderCom(language)}
+                  </div>
               </div>
           </div>
         )
@@ -25,7 +31,7 @@ class LanguageMeter extends React.Component{
   renderCom(lang){
     var html = [];
     for(var i = 0; i<lang.leve; i++){
-        html.push(<div className="dffm" style={{width:"7px"}}/>)
+        html.push(<div className="h30px rb fl w7px"/>)
     }
     return html;
   }

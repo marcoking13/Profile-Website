@@ -1,6 +1,6 @@
 import React from "react";
-import AppSample from "./../components/app_sample";
-import SampleApps from "./../config/sampleApps.js";
+import AppSample from "./../app_sample";
+import SampleApps from "./../../config/sampleApps.js";
 
 class AppContainer extends React.Component{
   constructor(props){
@@ -22,16 +22,16 @@ class AppContainer extends React.Component{
   render(){
 
     return(
-      <div>
-        <h2 className="appTitle bcc">My Apps</h2>
-        <div className="row appContainer">
+      <div className="container-fluid">
+
+        <div className="appContainer row">
 
           <div className="col-3"/>
             {this.renderApps()}
           <div className="col-2"/>
 
         </div>
-        <button className="appButton" onClick = {()=>{this.props.changeURL("apps")}}> See More</button>
+        <button className="appButton" onClick = {()=>{this.props.changeURL("apps")}} > See More </button>
       </div>
     )
   }

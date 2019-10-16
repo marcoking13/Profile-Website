@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "./nav_bar";
+import Navbar from "./../Navbar/nav_bar";
+
 class AppCurrent extends React.Component {
   constructor(props){
     super(props);
   }
-  renderLanguages(){
 
+  renderLanguages(){
       var langs = [];
       var i =0;
         for(var i =0;i<this.props.currentApp.languages.length -1;i++){
@@ -19,6 +20,7 @@ class AppCurrent extends React.Component {
     }
     return langs;
   }
+
   renderDiff(){
     var boxes=[];
     for(var i=0;i<this.props.currentApp.difficulty;i++){
@@ -26,6 +28,7 @@ class AppCurrent extends React.Component {
     }
     return boxes;
   }
+
   render(){
       return (
         <div className="animator" style={{background:this.props.background,paddingBottom:"50%",backgroundSize:"cover"}}>
@@ -66,7 +69,9 @@ class AppCurrent extends React.Component {
             </div>
         </div>
       )
+
   }
+  
 }
 
 

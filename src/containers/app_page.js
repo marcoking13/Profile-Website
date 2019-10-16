@@ -1,18 +1,19 @@
 import React from 'react';
 import "./../css/app.css";
-import Navbar from "./../components/nav_bar.js";
-import Showcase from "./../components/showcase.js";
+import Navbar from "./../components/Navbar/nav_bar.js";
+import Showcase from "./../components/Home/showcase.js";
 
 
-import AppLoading from "./../components/app_loader_component";
+import AppLoading from "./../components/CurrentApp/app_loader_component";
 import Apps from "./../config/myApps.js";
-import AllApps from "./../components/all_apps_component";
-import AppCurrent from "./../components/app_current_component";
+import AllApps from "./../components/App/all_apps_component";
+import AppCurrent from "./../components/CurrentApp/app_current_component";
 
 
 class AppPage extends React.Component {
   constructor(props){
     super(props);
+
     this.state = {
       currentApp:false,
       loading:false,
@@ -23,7 +24,8 @@ class AppPage extends React.Component {
     this.setApp = this.setApp.bind(this);
     this.resetState = this.resetState.bind(this);
 
-        window.scrollTo(0,0);
+    window.scrollTo(0,0);
+
   }
 
   resetState(){
@@ -37,20 +39,23 @@ class AppPage extends React.Component {
   setApp(app){
     this.setState({currentApp:app});
   }
+
   render(){
     var background = `url(${this.state.currentApp.background})`;
+
     if(this.state.loading){
       return <AppLoading loader = {this.loader} resetState={this.resetState} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp} background = {background} />
     }
+
     else if(this.state.currentApp){
       return <AppCurrent loader = {this.loader} resetState={this.resetState} changeURL = {this.props.changeURL} currentApp = {this.state.currentApp}  background = {background}/>
     }
+
     else{
       return <AllApps setApp = {this.setApp} resetState={this.resetState} changeURL = {this.props.changeURL} changeURL = {this.props.changeURL} apps = {this.state.apps} />
     }
 
   }
-
 
 }
 

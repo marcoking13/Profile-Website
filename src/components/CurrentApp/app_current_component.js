@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./nav_bar";
-import NavbarMobile from "./mobile_nav_bar";
+import Navbar from "./../Navbar/nav_bar";
+import NavbarMobile from "./../Navbar/mobile_nav_bar";
 import CurrentDesktop from "./desktop_current_app.js";
 import CurrentMobile from "./mobile_current_app.js";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./../css/mobileApp.css";
+import "./../../css/mobileApp.css";
 
 class AppMobileBox extends React.Component {
   renderAllAppsMobile(){
