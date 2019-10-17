@@ -1,7 +1,8 @@
 import React from "react";
 
 
-class AppBox extends React.Component{
+
+class LangBox extends React.Component{
   render(){
     return(
       <div className="col-1">
@@ -12,4 +13,4 @@ class AppBox extends React.Component{
   }
 }
 
-export default AppBox;
+export default LangBox;

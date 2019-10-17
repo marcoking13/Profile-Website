@@ -41,13 +41,13 @@ module.exports = [
         name:"CSS"
       },
       {
-        image:"images/javascript..png",
+        image:"images/javascript.png",
         name:"Javascript"
       }
 
     ],
     about:"Find coding events near you and learn how to code with codex's interface",
-    image:"images/codex.svg",
+    image:"images/codex.png",
     background:"images/codexb.jpg",
     className:"codexL"
 
@@ -201,7 +201,7 @@ module.exports = [
 
   },
   {
-    name:"Dragon Quest (Proto)",
+    name:"Dragon Quest",
     code:"froggy1",
     link:"https://sableye12.itch.io/dragon-quest-gl",
     difficulty:6,

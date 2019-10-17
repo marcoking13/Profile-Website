@@ -13,6 +13,9 @@
 .pb100px {
   padding-bottom: 100px !important;
 }
+.cover{
+  background:cover;
+}
 .mono{
   font-family: monospace;
 }
@@ -28,11 +31,17 @@
 .mt5{
   margin-top:5%;
 }
+.h50px{
+  height:50px;
+}
 .pb10{
   padding-bottom:10%;
 }
 .bold{
   font-weight: bold;
+}
+.ml10{
+  margin-left:10%;
 }
 .divider{
   height:30px;

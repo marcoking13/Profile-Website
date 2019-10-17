@@ -29,6 +29,7 @@
   border-radius:10px;
 
 }
+
 .appLogoM{
   width:75%;
   margin-left: 10%;
@@ -269,4 +270,33 @@
   margin-left: 10% !important;
   margin-top: 10% !important;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------- Revised-----------------------------*/
+
+
+
+
+
+
+
+.appBackgroundMo{
+  height:170px;
+  border:2px solid black;
+  border-radius:10px;
 }

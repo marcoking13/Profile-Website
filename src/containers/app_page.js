@@ -1,10 +1,9 @@
 import React from 'react';
 import "./../css/app.css";
+
 import Navbar from "./../components/Navbar/nav_bar.js";
-import Showcase from "./../components/Home/showcase.js";
-
-
-import AppLoading from "./../components/CurrentApp/app_loader_component";
+import Showcase from "./../components/Home/Desktop/showcase.js";
+import AppLoading from "./../components/CurrentApp/Desktop/app_loader_component";
 import Apps from "./../config/myApps.js";
 import AllApps from "./../components/App/all_apps_component";
 import AppCurrent from "./../components/CurrentApp/app_current_component";

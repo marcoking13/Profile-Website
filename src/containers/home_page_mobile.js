@@ -1,9 +1,9 @@
 import React from "react";
 
 import MobileNav from "./../components/Navbar/mobile_nav_bar.js";
-import LanguageMeter from "./../components/Home/language_meter_mobile";
-import ResumeButtons from "./../components/Home/resume_buttons";
-import AppSamples from "./../components/Home/app_samples";
+import LanguageMeter from "./../components/Home/Mobile/language_meter_mobile";
+import ResumeButtons from "./../components/Home/Mobile/resume_buttons";
+import AppSamples from "./../components/Home/Mobile/app_samples";
 
 import "./../css/mobile.css";
 import "./../css/mobileApp.css";
@@ -25,26 +25,24 @@ class HomePageMobile extends React.Component {
 
 
   render(){
+
     return (
       <div >
         <MobileNav changeURL = {this.props.changeURL} />
         <div className="pb100px container-fluid">
 
-
-
             <div className="container-fluid pb10 " style={{background:"url('images/mosaic.png')"}}>
                 <br />
                 <p className="text-center mono mt5 cw">Lets Build Something Amazing Together </p>
+
                 <div className= "row">
                     <div className="col-3"/>
-
                       <div className="col-6">
                           <button className="button ui  w100 inverted white">About Me</button>
                       </div>
-
                     <div className="col-3"/>
+              </div>
 
-                </div>
                 <br />
                 <br />
             </div>
@@ -68,10 +66,12 @@ class HomePageMobile extends React.Component {
               </div>
 
 
-        </div>
-        </div>
-    )
+              </div>
+            </div>
+    );
+
   }
+
 }
 
 
