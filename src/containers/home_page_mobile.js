@@ -26,25 +26,32 @@ class HomePageMobile extends React.Component {
 
   render(){
 
+    var background = `url("images/purps.png")`;
+
     return (
       <div >
         <MobileNav changeURL = {this.props.changeURL} />
+
         <div className="pb100px container-fluid">
 
-            <div className="container-fluid pb10 " style={{background:"url('images/mosaic.png')"}}>
+            <div className="container-fluid pb10 " style={{background:background}}>
                 <br />
                 <p className="text-center mono f17 mt5 cw">Lets Build Something Amazing Together </p>
 
                 <div className= "row">
                     <div className="col-3"/>
+
                       <div className="col-6">
                           <button className="button ui  w100 inverted white" onClick = {()=>{this.props.changeURL("about")}}>About Me</button>
                       </div>
+
                     <div className="col-3"/>
+
               </div>
 
                 <br />
                 <br />
+
             </div>
 
               <div>
@@ -53,21 +60,18 @@ class HomePageMobile extends React.Component {
 
               <div className="mt10 container-fluid">
                   <LanguageMeter />
-
               </div>
+
               <div className="divider"/>
+
               <div  className=" container-fluid " >
-
                   <p className="appMCT mt10 text-center  mono bold f17" >My Apps</p>
-
                     <AppSamples  samples = {this.state.samples}/>
-
                   <button onClick = {()=>{this.props.changeURL("apps")}} className="ssButton btn" style={{width:"50%",marginLeft:"25%",border:"2px solid black",marginTop:"7.5%"}}> See More</button>
               </div>
 
-
-              </div>
-            </div>
+          </div>
+      </div>
     );
 
   }

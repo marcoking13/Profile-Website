@@ -1,15 +1,14 @@
 .circle-image{
-  border-radius:50%;
-  width:50%;
-  height:50%;
-  margin-left: 25%;
-  margin-top: 5%;
+
+  position: absolute;
+  top:15%;
+  border-radius: 50%;
+  left:18%;
+  height:40%;
+  width:20%;
+
 }
-.jumbo{
-  border:2px solid #f4f4f4;
-  margin-top: 3%;
-  padding: 5px;
-}
+
 .titleA{
   text-align: center;
   font-family: monospace;
@@ -17,26 +16,43 @@
   margin-top: 5%;
   font-weight: bold;
 }
+.mt75{
+	margin-top:75%;
+}
+		
 .animator{
   animation:slide .15s 1 ease-in;
 }
 
-@keyframes slide{
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
+.aboutMe{
+  line-height: 1.5;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 5%;
+
 }
+
+.detailCon{
+  border: 2px solid #f4f4f4;
+}
+
 .detCon{
   border: 2px solid #f4f4f4;
-  padding-left:10px;
-  padding-right: 10px;
   margin-left: 20%;
+  margin-top: 75%;
 }
-@media screen and (max-width:480px){
-  .detCon{margin-left:10%;}
+
+
+
+
+
+
+@media screen and (max-width:580px){
+
+  .detCon{
+    margin-left:0%;
+  }
+
   .aboutMeCon{
     margin-top:10%;
     font-size: 13px;
@@ -45,23 +61,24 @@
     padding-bottom: 100px !important;
 
   }
-  .circle-image{
-    width:300px;
-    height:550px;
-    margin-left: 20%;
 
+  .circle-image{
+      position: absolute;
+      top:13% !important;
+      left:24%;
+      height:200px !important;
+      width:200px !important;
   }
 
 }
-.aboutMe{
-  line-height: 2;
-  padding-right: 40px;
-    padding-left: 40px;
-    margin-top: 5%;
 
 
 
-}
-.detailCon{
-  border: 2px solid #f4f4f4;
+@keyframes slide{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
 }

@@ -100,7 +100,7 @@ module.exports = [
     ],
     about:"My skill in React so far",
     image:"images/reactL.png",
-    background:"images/uniy.jpg",
+    background:"images/rr.jpg",
     className:"subL"
 
   },

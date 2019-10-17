@@ -15,11 +15,11 @@ export default class ResumeButtons extends React.Component {
                 <div className="col-2"/>
 
                   <div className="col-4">
-                    <button className="button ui red f13 w100"> Resume</button>
+                   <a href="https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"> <button className="button ui red f13 w100"> Resume</button></a>
                   </div>
 
                   <div className="col-4">
-                    <button  className="button ui blue f13 w100"> Github</button>
+                    <a href="http://github.com/marcoking13">  <button  className="button ui blue f13 w100"> Github</button> </a>
                  </div>
 
                  <div className="col-2"/>

@@ -10,15 +10,15 @@ class AllApps extends React.Component {
 
   render(){
 
+    var background = `url("images/purps.png")`;
+
       if(window.innerWidth <= 590){
 
         return(
-
-          <div className="container-fluid pb100px"style={{background:"url('images/mosaic.png')"}}>
+          <div className="container-fluid pb100px"style={{background:background}}>
             <MobileNav changeURL= {this.props.changeURL} />
             <AppMobileBox setApp = {this.props.setApp} apps = {this.props.apps} />
           </div>
-
         );
 
       }
@@ -27,9 +27,9 @@ class AllApps extends React.Component {
 
         return (
 
-          <div className="container-fluid pad100px"style={{background:"url('images/mosaic.png')"}}>
+          <div className="container-fluid pad100px"style={{background:background}}>
 
-            <div className=" bb">
+            <div className="bb">
               <Navbar changeURL = {this.props.changeURL}/>
             </div>
 

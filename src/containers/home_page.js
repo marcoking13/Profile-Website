@@ -28,13 +28,17 @@ class HomePage extends React.Component {
   }
 
    render(){
+
+     var background = `url("images/purps.png")`;
+
     if(window.innerWidth <= 590){
       return <HomePageMobile changeURL = {this.props.changeURL} />
-    }else{
+    }
+    else{
       return (
-        <div className="App animator">
+        <div className="App animator pb100px">
 
-          <div className="codeBackground purpBorder" style={{background:"url('images/mosaic.png')"}}>
+          <div className="codeBackground purpBorder" style={{background:background}}>
               <Navbar changeURL = {this.props.changeURL}/>
               <Showcase changeURL = {this.props.changeURL} />
             </div>
