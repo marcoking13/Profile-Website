@@ -6,8 +6,9 @@ class Showcase extends React.Component{
     return(
 
                   <div className=" showCase">
-                      <h2 className="showCaseTitle">Let's Build Something Amazing Together</h2>
-                      <h6 className="showCaseTitle">Learn More About Me</h6>
+                      <h2 className="text-center mt5">Let's Build Something Amazing Together</h2>
+                      <br />
+                      <h6 className="text-center cw mono">Learn More About Me</h6>
                       <button onClick = {()=>{this.props.changeURL("about")}}className="showcaseButton">About Me</button>
                   </div>
     )

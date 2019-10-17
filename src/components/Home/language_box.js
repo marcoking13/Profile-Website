@@ -22,7 +22,7 @@ class LanguageBox extends React.Component{
     var html = [];
 
     for(var i = 0; i <this.state.current;i++){
-      html.push(<div style={{float:"left",height:"20px",width:"20px",border:"2px solid black",background:"red"}}className={"segs seg"+i}/>);
+      html.push(<div className={"segs seg"+i}/>);
     }
     return html;
   }
@@ -35,8 +35,10 @@ class LanguageBox extends React.Component{
   render(){
     return(
       <div>
-        <h2 className="languageTitle">Languages I Mastered</h2>
-        <div className="row languageBox cdr">
+        <br />
+        <h2 className="mono text-center">Languages I Mastered</h2>
+        <br />
+        <div className="row">
 
           <div className="col-3"/>
             {this.renderLanguages()}
@@ -46,7 +48,7 @@ class LanguageBox extends React.Component{
       </div>
 
       <div className="complexBarBox">
-          <p className="comName">Mastery</p>
+          <p className="f17 text-center mono">Mastery</p>
           <div className="blackBarLevel">
               {this.renderBars()}
           </div>

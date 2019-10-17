@@ -9,10 +9,10 @@ export default class ResumeButtons extends React.Component {
             <div className="row">
                 <div className="col-2"/>
                   <div className="col-4">
-                    <button className="button ui red f13 w100">My Resume</button>
+                    <button className="button ui red f13 w100"> Resume</button>
                   </div>
                   <div className="col-4">
-                    <button  className="button ui blue f13 w100">My Github</button>
+                    <button  className="button ui blue f13 w100"> Github</button>
                  </div>
                  <div className="col-2"/>
                 </div>

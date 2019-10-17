@@ -32,12 +32,21 @@ class HomePageMobile extends React.Component {
 
 
 
-            <div className="pb"style={{background:"url('images/mosaic.png')"}}>
+            <div className="container-fluid pb10 " style={{background:"url('images/mosaic.png')"}}>
+                <br />
+                <p className="text-center mono mt5 cw">Lets Build Something Amazing Together </p>
+                <div className= "row">
+                    <div className="col-3"/>
 
-                <h2 className="titleM">Lets Build Something Amazing Together </h2>
-                <button className="profileButtonM" onClick = {()=>{
-                  this.props.changeURL("about")}}
-                >About Me </button>
+                      <div className="col-6">
+                          <button className="button ui  w100 inverted white">About Me</button>
+                      </div>
+
+                    <div className="col-3"/>
+
+                </div>
+                <br />
+                <br />
             </div>
 
               <div>
