@@ -46,11 +46,9 @@ class MobileNavBar extends React.Component {
                   }}>Apps
                 </p>
 
-                  <p
-                    onClick={()=>{
-                      this.props.changeURL("home");
-                    }}>Resume
-                  </p>
+                      <p onClick = {()=>{
+                        window.open("https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing");
+                      }}> Resume </p>
 
               </div>
 

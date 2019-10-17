@@ -33,12 +33,12 @@ class HomePageMobile extends React.Component {
 
             <div className="container-fluid pb10 " style={{background:"url('images/mosaic.png')"}}>
                 <br />
-                <p className="text-center mono mt5 cw">Lets Build Something Amazing Together </p>
+                <p className="text-center mono f17 mt5 cw">Lets Build Something Amazing Together </p>
 
                 <div className= "row">
                     <div className="col-3"/>
                       <div className="col-6">
-                          <button className="button ui  w100 inverted white">About Me</button>
+                          <button className="button ui  w100 inverted white" onClick = {()=>{this.props.changeURL("about")}}>About Me</button>
                       </div>
                     <div className="col-3"/>
               </div>
