@@ -4,9 +4,10 @@ import MobileNav from "./../components/Navbar/mobile_nav_bar.js";
 import LanguageMeter from "./../components/Home/Mobile/language_meter_mobile";
 import ResumeButtons from "./../components/Home/Mobile/resume_buttons";
 import AppSamples from "./../components/Home/Mobile/app_samples";
+import HobbyContainer from "./../components/Home/Mobile/hobby_container.js";
+import Footnote from "./../components/Footer/footnote_mobile.js";
 
 import "./../css/mobile.css";
-import "./../css/mobileApp.css";
 import "./../css/utility.css";
 
 import Samples from "./../config/sampleApps.js";
@@ -71,6 +72,16 @@ class HomePageMobile extends React.Component {
               </div>
 
           </div>
+
+
+
+          <div>
+            <p className="text-center mono f17 bold ">Hobbies</p>
+            <HobbyContainer />
+
+          </div>
+
+          <Footnote />
       </div>
     );
 

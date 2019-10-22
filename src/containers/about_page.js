@@ -1,15 +1,17 @@
 import React from "react";
-import "./../css/about.css";
+
 import NavBar from "./../components/Navbar/nav_bar";
 import NavBarMobile from "./../components/Navbar/mobile_nav_bar.js";
 import DesktopDetails from "./../components/About/details_desktop_component";
 import MobileDetails from "./../components/About/details_mobile_component";
 
+import "./../css/about.css";
+
 class AboutContainer extends React.Component {
 
   constructor(props){
     super(props);
-    
+
     this.state = {
 
       profile: {
@@ -46,7 +48,7 @@ class AboutContainer extends React.Component {
         <div>
             <NavBarMobile changeURL = {this.props.changeURL} about  = {this.state.about}/>
 
-          <div className="container-fluid aboutMC">
+          <div className="container-fluid aboutMC ">
               <MobileDetails profile = {this.state.profile} about  = {this.state.about}/>
           </div>
 

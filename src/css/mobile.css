@@ -12,74 +12,12 @@
   padding-top: 40px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
+
 .sidenav p:hover{
   background:#f4f4f4;
   color:black !important;
 }
-.titleM{
-  text-align: center;
-  padding-top: 10% !important;
-  color:white !important;
 
-  font-size: 20px;
-
-}
-@keyframes glowup{
-  0%{
-    border-color:inherit
-  }
-  100%{
-    border-color:red;
-    border-width:4px;
-
-  }
-}
-@keyframes glowdown{
-  0%{
-    border-color:red
-  }
-  100%{
-    border-color:white;
-    border-width:1px;
-  }
-}
-.appBoxM{
-  animation: glowdown ease-in 1 .3s;
-  border-width:1px;
-  border-color:white;
-}
-.appBoxM:hover{
-  animation: glowup ease-in 1 .3s;
-  border-color:red;
-  border-width:4px;
-
-}
-.marco{
-  text-align: center;
-  color:white;
-  font-size: 12px !important;
-  margin-right: 10%;
-}
-.langBM{
-  width:100%;
-
-  float:left;
-  margin-top: 2.5%;
-
-}
-.langBarM{
-  width:50%;
-  background:black;
-  float:left;
-  margin-left: 5%;
-  height:20px;
-  margin-top: 2.5%;
-}
-.langTM{
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-}
 .dffm{
   width:15px;
   height:20px;
@@ -87,102 +25,7 @@
   float:left;
   background:red !important;
 }
-.langNM{
-  float:left;
-  margin-top: 2%;
-  margin-left: 5%;
-}
-.pb50{
-  padding-bottom:100px;
-}
-.appContainerM{
-  clear:both;
-  padding-bottom:200px;
-  margin-top: 50px;
-  width:100%;
-}
-.appTTM{
-  text-align: center;
-  font-weight: bold;
-  margin-top: 20px;
-}
-.resumeBoxMm{
-  margin-top: 10%;
-  padding-bottom:10%;
-  border-bottom:2px solid purple;
-}
-.appNameMM{
-  color:white;
 
-  text-align: center;
-}
-.checkoutApp{
-  border:2px solid black;
-}
-.checkoutApp:hover{
-  background:black;
-  color:white;
-}
-.appBoxM{
-  width:50%;
-  float:left;
-  background:black;
-  border-radius:10px;
-  font-size: 20px;
-  margin-left: 25%;
-  margin-top: 50px;
-}
-.appImgMM{
-  width:90%;
-  margin-left: 5%;
-
-}
-.resBB{
-  background:white;
-  border:2px solid black;
-  margin-left: 12.5%;
-  float:left;
-}
-.langIM{
-  width:10%;
-  float:left;
-  margin-left: 5%;
-
-}
-.resM{
-  text-align: center;
-  font-weight: bold;
-}
-.profileButtonM{
-  width:50%;
-  margin-top: 5%;
-  margin-left: 25%;
-  background:white;
-  border: 2px solid black;
-}
-.pb{
-
-  padding-bottom:50px !important;
-
-}
-.profileNM{
-  color:white;
-  text-align: center;
-  margin-top:5%;
-}
-.appNamerM{
-  font-size: 20px;
-}
-.redA{
-  color:red !important;
-}
-.list{
-  margin-top:5%;
-}
-.profileA{
-  width:50%;
-  margin-left:25%;
-}
 .profileImg{
   width:50%;
   margin-left: 25%;
@@ -197,11 +40,6 @@
   transition: 0.3s;
 }
 
-.bw{
-  background:white !important;
-  color: black !important;
-}
-
 /* When you mouse over the navigation links, change their color */
 .sidenav p:hover {
   color: #f1f1f1;
@@ -213,57 +51,27 @@
   top: -1%;
   color:white;
   right: 25px;
-
   font-size: 26px;
   margin-left: 70px;
 }
-.upAddress{
-  border:1px solid grey;
-  color: #f6f6f6;
-  text-align: center;
-  padding:5px;
 
-
-}
-
-.searchM{
-  width:100%;
-
-  background:black;
-  color:white;
-
-  border-color:none;
-}
-.adM{
-
-  width:90%;
-  margin-left:5%;
-  color:white;
-  border:none;
-  margin-top: 5%;
-  border-bottom:1px solid white;
-  background:black;
-  text-align: center;
-
-}
-.zipM{
-  width:35%;
-  float:left;
-  margin-left:5%;
-}
 .menuIC{
   position: absolute;
   top:3%;
   left:5%;
 }
-.menuBarI{
 
+.appBackgroundMo:hover{
+  border-color:orange !important;
+}
+
+.menuBarI{
   width: 25px;
   height: 4px;
   background-color: white;
   margin: 6px 0;
-
 }
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -274,8 +82,4 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-.bb{
-  background:black;
-  padding-bottom:30px;
 }

@@ -3,14 +3,13 @@ import React from 'react';
 import "./../css/style.css";
 
 import Navbar from "./../components/Navbar/nav_bar.js";
-import Error from "./../components/error.js";
 import HomePage from "./home_page.js";
 import AppCurrent from "./../components/CurrentApp/app_current_component.js";
 import AppPage from "./app_page.js";
 import AboutPage from "./about_page";
 
 class App extends React.Component {
-  
+
   constructor(props){
     super(props);
 

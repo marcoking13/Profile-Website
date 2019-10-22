@@ -19,7 +19,7 @@ class AppDesktopBox extends React.Component {
             <img className="appLogo" src={app.image}/>
           </div>
 
-          <h2 className="appNamer">{app.name}</h2>
+          <p className="appNamer cw text-center mt5 bold">{app.name}</p>
 
         </div>
       );
@@ -31,9 +31,9 @@ class AppDesktopBox extends React.Component {
   render(){
 
     return (
-      <div className="appContainer">
+      <div className="pb5">
 
-          <h2 className="appTitle">My Apps</h2>
+          <h4 className="text-center cw">My Apps</h4>
 
             <div className="row">
                 {this.renderAllApps()}

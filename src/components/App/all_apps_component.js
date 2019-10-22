@@ -26,16 +26,16 @@ class AllApps extends React.Component {
       else{
 
         return (
+          <div className="container-fluid">
 
-          <div className="container-fluid pad100px"style={{background:background}}>
+            <Navbar changeURL = {this.props.changeURL}/>
 
-            <div className="bb">
-              <Navbar changeURL = {this.props.changeURL}/>
-            </div>
-
+          <div className="pad100px"style={{background:background}}>
+              <br />
               <AppDesktopBox setApp = {this.props.setApp} apps = {this.props.apps} />
-
           </div>
+
+        </div>
       );
 
     }

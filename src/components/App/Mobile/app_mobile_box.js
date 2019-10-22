@@ -1,6 +1,6 @@
 import React from "react";
 // -------------------------------------------------------------------DONE-------------------------------------------------------------------------------
-import "./../../../css/mobileApp.css";
+
 import "./../../../css/utility.css";
 
 //----------------DONE--------------------------------
@@ -15,7 +15,7 @@ class AppMobileBox extends React.Component {
 
       return(
 
-          <div className="appBoxMo col-4 mt10"  onClick = {()=>{
+          <div className="appBoxMo  pb5 col-4 mt10"  onClick = {()=>{
             this.props.setApp(app);
           }}>
 

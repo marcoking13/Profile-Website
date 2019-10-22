@@ -1,11 +1,14 @@
 import React from 'react';
-import "./../css/style.css";
+
 import Hobbies from "./../config/hobbies.js";
 import Navbar from "./../components/Navbar/nav_bar.js";
 import Showcase from "./../components/Home/Desktop/showcase.js";
 import LanguageBox from "./../components/Home/Desktop/language_box";
 import AppContainer from "./../components/Home/Desktop/app_container.js";
 import HomePageMobile from "./home_page_mobile";
+import Footnote from "./../components/Footer/footnote.js";
+
+import "./../css/style.css";
 
 class HomePage extends React.Component {
   constructor(props){
@@ -36,7 +39,7 @@ class HomePage extends React.Component {
     }
     else{
       return (
-        <div className="App animator pb100px">
+        <div className="App animator ">
 
           <div className="codeBackground purpBorder" style={{background:background}}>
               <Navbar changeURL = {this.props.changeURL}/>
@@ -54,14 +57,14 @@ class HomePage extends React.Component {
 
                 <div className="col-4">
                   <br />
-                  <a href="http://github.com/marcoking13">  <button className="button ui blue git"><img className="gitLogo "src="images/github.png"/>My Github</button></a>
+                  <a href="http://github.com/marcoking13">  <button className="button ui blue git"><img className="buttonLogo "src="images/github.png"/>My Github</button></a>
                 </div>
 
                   <div className="col-2"/>
 
                 <div className="col-4">
                   <br />
-                  <a href="https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"><button className=" button ui red"><img className="gitLogo"src="images/linkden.png"/>My Resume</button></a>
+                  <a href="https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"><button className=" button ui red"><img className="buttonLogo"src="images/linkden.png"/>My Resume</button></a>
                 </div>
 
               </div>
@@ -86,6 +89,8 @@ class HomePage extends React.Component {
               </div>
 
             </div>
+
+              <Footnote />
 
       </div>
 

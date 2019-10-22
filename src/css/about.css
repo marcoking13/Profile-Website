@@ -16,10 +16,11 @@
   margin-top: 5%;
   font-weight: bold;
 }
+
 .mt75{
 	margin-top:75%;
 }
-		
+
 .animator{
   animation:slide .15s 1 ease-in;
 }
@@ -39,7 +40,7 @@
 .detCon{
   border: 2px solid #f4f4f4;
   margin-left: 20%;
-  margin-top: 75%;
+  margin-top: 55%;
 }
 
 

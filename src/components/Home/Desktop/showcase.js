@@ -8,14 +8,21 @@ class Showcase extends React.Component{
 
     return(
 
-        <div className=" showCase">
-          <h2 className="text-center mt5">Let's Build Something Amazing Together</h2>
+        <div>
+          <h2 className="text-center cw mono mt5">Let's Build Something Amazing Together</h2>
 
             <br />
 
           <h6 className="text-center cw mono">Learn More About Me</h6>
 
-          <button onClick = {()=>{this.props.changeURL("about")}}className="showcaseButton">About Me</button>
+          <div className="row">
+            <div className="col-4"/>
+            <div className="col-4">
+              <br/>
+              <button onClick = {()=>{this.props.changeURL("about")}}className="w100 button ui inverted white">About Me</button>
+            </div>
+            <div className="col-4"/>
+          </div>
 
           </div>
     );

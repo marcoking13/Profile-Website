@@ -7,15 +7,16 @@ class NavBar extends React.Component{
 
     return(
 
-      <div className="navbarProfile row" >
+      <div className="navbarProfile bb row" >
 
         <div className="col-2">
           <img className="logo" src="images/logo.png"/>
         </div>
 
         <div className="col-5"></div>
+        <br />
+        <div className="col-5 mt1_5 navgroup">
 
-        <div className="col-5 navgroup">
           <p className="navChoice" onClick = {
             ()=>{
 
@@ -25,7 +26,7 @@ class NavBar extends React.Component{
 
           <p className="navChoice" onClick = {
             ()=>{
-              
+
                 if(this.props.resetState){
                   this.props.resetState();
                 }else{

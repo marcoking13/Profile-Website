@@ -7,7 +7,6 @@ import CurrentMobile from "./Mobile/mobile_current_app.js";
 
 import "./../../css/utility.css";
 
-
 class AppCurrent extends React.Component {
   constructor(props){
     super(props);
@@ -27,9 +26,9 @@ class AppCurrent extends React.Component {
         for(var i =0;i<this.props.currentApp.languages.length -1;i++){
           langs.push(
 
-            <div className="languagesL">
-              <img className="languageLC" src={this.props.currentApp.languages[i].image} />
-              <p className="lll">{this.props.currentApp.languages[i].name}</p>
+            <div className="fl w20 ml7_5">
+              <img className="w100" src={this.props.currentApp.languages[i].image} />
+              <p className="fl f11 ml5">{this.props.currentApp.languages[i].name}</p>
             </div>
 
           );
@@ -44,7 +43,7 @@ class AppCurrent extends React.Component {
     var boxes=[];
 
     for(var i=0;i<this.props.currentApp.difficulty;i++){
-      boxes.push(<div className={"diffSeg  diff"+i}/>)
+      boxes.push(<div className={"diffSeg  br bBB h20 fl diff"+i}/>)
     }
 
     return boxes;
@@ -69,14 +68,14 @@ class AppCurrent extends React.Component {
 
       );
 
-    }else{
+      }else{
 
-        return (
+          return (
 
-          <div className="container-fluid cover pb100px"style={{background:this.props.background}}>
-            <NavbarMobile resetState = {this.props.resetState} changeURL = {this.props.changeURL} />
-            <CurrentMobile resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
-          </div>
+            <div className="container-fluid cover pb100px"style={{background:this.props.background}}>
+              <NavbarMobile resetState = {this.props.resetState} changeURL = {this.props.changeURL} />
+              <CurrentMobile resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
+            </div>
 
         );
 

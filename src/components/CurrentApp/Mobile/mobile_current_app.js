@@ -6,9 +6,9 @@ class MobileCurrentApp extends React.Component {
   renderPara(){
 
     if(this.props.currentApp.code){
-      return   <p className="fl"style={{textAlign:"center",clear:"both"}}>{"Passcode: "+this.props.currentApp.code}</p>
+      return   <p className="text-center mt5 clear">{"Passcode: "+this.props.currentApp.code}</p>
     }else{
-      return
+      return null;
     }
 
   }
@@ -17,44 +17,58 @@ class MobileCurrentApp extends React.Component {
 
     return(
 
-      <div>
+      <div className="row">
 
-        <div className="col-12 mlop jumbotron jumbotrons">
+          <div className="col-12 bw pb100">
 
-          <img  onClick = {()=>{this.props.resetState()}} src="images/arrow.png"style={{width:"30px",height:"30px"}}/>
-          <h4 className="titleCurrent ">{this.props.currentApp.name}</h4>
+            <img  className="backArrow" onClick = {()=>{this.props.resetState()}} src="images/arrow.png"/>
+            <h4 className="text-center  ">{this.props.currentApp.name}</h4>
 
-          <div className="jumboRow1">
-            <h4 className="howToPlay">How To Play</h4>
-            <p className="howToPlay how">
+          <div className="mt15 w100">
+            <h4 className="text-center mono mt5">How It Works</h4>
+            <p className="text-center mono  bold">
               {this.props.currentApp.about}
             </p>
           </div>
 
-          <div className="jumboRow1">
-            <h6 className="howToPlay">Coded in:</h6>
+          <div className="mt5 w100">
 
+            <h6 className="text-center mono ">Coded in:</h6>
             <div className="languageBoxer">
               {this.props.renderLanguages()}
-            </div>
+          </div>
 
           </div>
 
-          <div className="jumboRow2">
-            <h6 className="howToPlay compM">Complexity:</h6>
-          <div className="diffBox">
+          <div className="w100 mt15">
+            <h6 className="text-center mono bold ">Complexity:</h6>
 
-              {this.props.renderDiff()}
+            <div className="diffBox w50 h20 ml25 bb">
+                {this.props.renderDiff()}
+              </div>
+          </div>
 
+          <div className="row">
+
+            <div className="col-3"/>
+
+            <div className="col-6">
+              <a href={this.props.currentApp.link}>
+                <br />
+                <br />
+                <button  className=" w100 button ui black">Check it out</button>
+              </a>
             </div>
+
+            <div className="col-3"/>
 
           </div>
 
-          <a href={this.props.currentApp.link}><button className="btn btns  btn-danger">Check it out</button></a>
 
             {this.renderPara()}
 
             </div>
+
         </div>
     );
 

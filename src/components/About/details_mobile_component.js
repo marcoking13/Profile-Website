@@ -6,11 +6,13 @@ class DetailsComponent extends React.Component {
     var background = `url("images/purps.png")`;
 
     return(
-      <div className="container-fluid cw" style={{background:background}}>
+      <div className="container-fluid pb100px cw" style={{background:background}}>
 
-        
+
         <img className="circle-image"  src="images/avatar.png" />
+
         <div className="row">
+
           <div className="col-12">
 
             <div className="bb detCon p10px">
@@ -19,17 +21,13 @@ class DetailsComponent extends React.Component {
               <p>Education: <strong>{this.props.profile.education}</strong></p>
               <p>Work: <strong>{this.props.profile.job}</strong></p>
             </div>
-			
-			<div className="bb">
-				<br />
-				<p className="aboutMe">  {this.props.about}</p>
-			</div>
-			
-          </div>
 
-     
+			        <div className="bb pb100px">
+				          <br />
+				          <p className="aboutMe">  {this.props.about}</p>
+			        </div>
 
-          
+            </div>
 
         </div>
 

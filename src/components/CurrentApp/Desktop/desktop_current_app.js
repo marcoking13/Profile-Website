@@ -6,11 +6,11 @@ class MobileCurrentApp extends React.Component {
   renderPara(){
 
     if(this.props.currentApp.code){
-      return   <p className="fl"style={{textAlign:"center",marginTop:"5%",clear:"both"}}>{"Passcode: "+this.props.currentApp.code}</p>
+      return   <p className="fl text-center mt5 clear ">{"Passcode: "+this.props.currentApp.code}</p>
     }else{
       return
     }
-    
+
   }
 
   render(){
@@ -19,7 +19,7 @@ class MobileCurrentApp extends React.Component {
 
       <div>
 
-          <img  onClick = {()=>{this.props.resetState()}}src="images/arrow.png"style={{position:"absolute",left:"5%",top:'15%',width:"60px",height:"50px"}}/>
+          <img className="backArrowDesktop" onClick = {()=>{this.props.resetState()}}src="images/arrow.png"/>
 
         <div className="row1">
 
@@ -32,24 +32,25 @@ class MobileCurrentApp extends React.Component {
         <div className="row2">
 
 
-          <div className="col-6 jumbotron jumbotrons">
+          <div className="col-6 jumbotron bw ml25">
 
-              <h4 className="titleCurrent">{this.props.currentApp.name}</h4>
+              <h3 className="text-center ">{this.props.currentApp.name}</h3>
 
-              <div className="jumboRow1">
+              <div>
+                <br />
+                <h5 className="text-center">How It Works</h5>
 
-              <h4 className="howToPlay">How To Play</h4>
+                <p className="text-center mt2_5 f17">
+                  {this.props.currentApp.about}
+                </p>
 
-              <p className="howToPlay how">
-                {this.props.currentApp.about}
-              </p>
+              </div>
 
-          </div>
+              <br />
 
+             <div>
 
-            <div className="jumboRow1">
-
-                <h6 className="howToPlay">Coded in:</h6>
+                <h6 className="text-center bold mono">Coded in:</h6>
 
                 <div className="languageBoxer">
                     {this.props.renderLanguages()}
@@ -57,21 +58,32 @@ class MobileCurrentApp extends React.Component {
 
               </div>
 
-              <div className="jumboRow2">
+              <div className="w100 mt15">
 
-                <h6 className="howToPlay">Complexity:</h6>
+                <h6 className="text-center mono">Complexity:</h6>
 
-                <div className="diffBox">
+                <div className="diffBox w50 h20 ml25 bb">
                   {this.props.renderDiff()}
                 </div>
 
               </div>
 
-              <a href={this.props.currentApp.link}>
 
-                <button onClick = {()=>{this.props.loader()}} className="btn btns  btn-danger">Check it out</button>
 
-              </a>
+
+              <div className="row">
+
+                <div className="col-3"/>
+
+                <div className="col-6">
+                  <a href={this.props.currentApp.link}>
+                    <br />
+                    <button  className=" w100 button ui black">Check it out</button>
+                  </a>
+                </div>
+
+                <div className="col-3"/>
+              </div>
 
 
               {this.renderPara()}

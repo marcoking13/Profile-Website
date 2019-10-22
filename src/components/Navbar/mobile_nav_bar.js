@@ -14,43 +14,43 @@ class MobileNavBar extends React.Component {
   render(){
 
     return (
-      <div className="bb">
+      <div className="bb h75px">
 
         <div id="mySidenav" className="sidenav">
 
           <div className="closebtn" onClick={()=>{this.closeNav()}}>&times;</div>
 
-              <img className="profileImg" src="./images/marco.PNG"/>
-              <p className="marco">Marco Khodr </p>
+              <img className="profileImg" src="./images/avatar.png"/>
 
-            <div className="list">
-              <p
-                onClick={()=>{
-                    this.props.changeURL("home");
-                  }}>Home
-              </p>
-
+              <div className="mt10">
+                <br />
                 <p
                   onClick={()=>{
-                    this.props.changeURL("about");
-                  }}
-                  >About
-                </p>
+                      this.props.changeURL("home");
+                    }}>Home
+                  </p>
 
-                  <p onClick={()=>{
-                    if(this.props.resetState){
-                      this.props.resetState();
-                    }else{
-                      this.props.changeURL("apps");
-                    }
-                  }}>Apps
-                </p>
+                  <p
+                    onClick={()=>{
+                      this.props.changeURL("about");
+                    }}
+                    >About
+                  </p>
 
-                      <p onClick = {()=>{
+                    <p onClick={()=>{
+                      if(this.props.resetState){
+                        this.props.resetState();
+                      }else{
+                        this.props.changeURL("apps");
+                      }
+                    }}>Apps
+                    </p>
+
+                    <p onClick = {()=>{
                         window.open("https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing");
-                      }}> Resume </p>
+                    }}> Resume </p>
 
-              </div>
+                </div>
 
           </div>
 

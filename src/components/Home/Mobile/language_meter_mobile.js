@@ -8,7 +8,22 @@ class LanguageMeter extends React.Component{
     super(props);
 
     this.state = {
-      languages:Languages
+      languages:Languages,
+      colors:[
+        "b661",
+        "b801",
+        "b991",
+        "b324",
+        "be62",
+        "bff4",
+        "bff5",
+        "bff7",
+        "bff8",
+        "bff9",
+        "bffa",
+        "bffa",
+        "bffc"
+      ]
     }
 
   }
@@ -47,10 +62,11 @@ class LanguageMeter extends React.Component{
     var html = [];
 
     for(var i = 0; i<lang.leve; i++){
-        html.push(<div className="h30px rb fl w7px"/>)
+        html.push(<div className={"h30px  fl w13px "+ this.state.colors[i]}/>)
     }
 
     return html;
+
   }
 
   render(){
@@ -61,8 +77,8 @@ class LanguageMeter extends React.Component{
             <br />
           {this.renderLanguages()}
         </div>
-    )
-    
+    );
+
   }
 
 }

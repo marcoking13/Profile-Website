@@ -19,7 +19,9 @@ class AppContainer extends React.Component{
     var i =1;
 
     return this.state.samples.map((app)=>{
+
       return <AppSample  app = {app}/>
+
     });
 
   }
@@ -36,6 +38,7 @@ class AppContainer extends React.Component{
           <div className="col-2"/>
 
         </div>
+
           <br />
 
             <div className="row">
@@ -45,7 +48,7 @@ class AppContainer extends React.Component{
                 <br />
                 <button className="button ui w100 black" onClick = {()=>{this.props.changeURL("apps")}} > See More </button>
               </div>
-              
+
             </div>
 
       </div>
