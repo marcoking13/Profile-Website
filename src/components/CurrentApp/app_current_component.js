@@ -5,6 +5,9 @@ import NavbarMobile from "./../Navbar/mobile_nav_bar";
 import CurrentDesktop from "./Desktop/desktop_current_app.js";
 import CurrentMobile from "./Mobile/mobile_current_app.js";
 
+import Footnote from "./../Footer/footnote.js";
+import FootnoteMobile from "./../Footer/footnote_mobile.js"
+
 import "./../../css/utility.css";
 
 class AppCurrent extends React.Component {
@@ -56,14 +59,14 @@ class AppCurrent extends React.Component {
 
         return (
 
-          <div className="animator pb100px cover" style={{background:this.props.background}}>
+          <div className="animator cover" style={{background:this.props.background}}>
 
             <div className="navbarAppC">
               <Navbar resetState = {this.props.resetState} changeURL={this.props.changeURL}/>
             </div>
 
               <CurrentDesktop resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
-
+              <Footnote />
           </div>
 
       );
@@ -72,9 +75,10 @@ class AppCurrent extends React.Component {
 
           return (
 
-            <div className="container-fluid cover pb100px"style={{background:this.props.background}}>
+            <div className="container-fluid cover "style={{background:this.props.background}}>
               <NavbarMobile resetState = {this.props.resetState} changeURL = {this.props.changeURL} />
               <CurrentMobile resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
+              <FootnoteMobile />
             </div>
 
         );

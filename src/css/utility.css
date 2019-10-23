@@ -13,6 +13,20 @@
 .container-fluid{
   padding:0;
 }
+.bR20{
+  border-radius:20px;
+}
+
+.bBP{
+  border:2px solid purple !important;
+}
+
+.pb50px{
+  padding-bottom:50px;
+}
+.pb25px{
+  padding-bottom:25px;
+}
 .segs{
   position: relative;
 

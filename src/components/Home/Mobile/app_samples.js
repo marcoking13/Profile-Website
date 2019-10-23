@@ -12,9 +12,9 @@ export default class AppSamples extends React.Component{
 
           return (
 
-            <div className="col-4 bWW turnRedE bb">
+            <div className="col-4 bWW turnRedE bR20 bPB  pb50px bb">
 
-                <div className="apBB  row bb">
+                <div className="apBB row bb">
 
                   <div className="col-2"/>
 
@@ -27,7 +27,7 @@ export default class AppSamples extends React.Component{
 
                 </div>
 
-                  <p className=" turnRedE text-center purpleE w100 cw">{sample.name}</p>
+                  <p className=" turnRedE text-center purpleE  w100 cw">{sample.name}</p>
 
                 </div>
 

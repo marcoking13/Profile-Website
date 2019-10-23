@@ -6,7 +6,7 @@ class DetailsComponent extends React.Component {
     var background = `url("images/purps.png")`;
 
     return(
-      <div className="container-fluid pb100px cw" style={{background:background}}>
+      <div className="container-fluid cw" style={{background:background}}>
 
 
         <img className="circle-image"  src="images/avatar.png" />

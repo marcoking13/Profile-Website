@@ -19,7 +19,7 @@ class MobileCurrentApp extends React.Component {
     <div>
       <div className="row">
 
-          <div className="col-12 bw pb100">
+          <div className="col-12 bw pb25px">
             <img  className="backArrow" onClick = {()=>{this.props.resetState()}} src="images/arrow.png"/>
             <h4 className="text-center  ">{this.props.currentApp.name}</h4>
 
@@ -29,7 +29,7 @@ class MobileCurrentApp extends React.Component {
               {this.props.currentApp.about}
             </p>
           </div>
-          <br />
+
           <div className="mt5 w100">
             <h6 className="text-center mono ">Coded in:</h6>
             <div className="languageBoxer">
@@ -37,7 +37,7 @@ class MobileCurrentApp extends React.Component {
             </div>
           </div>
           <br />
-          <br />
+
           <div className="w100 mt15">
             <h6 className="text-center mono bold ">Complexity:</h6>
             <div className="diffBox w50 h20 ml25 bb">
@@ -61,6 +61,7 @@ class MobileCurrentApp extends React.Component {
 
 
         </div>
+
       </div>
     );
 

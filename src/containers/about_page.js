@@ -4,6 +4,8 @@ import NavBar from "./../components/Navbar/nav_bar";
 import NavBarMobile from "./../components/Navbar/mobile_nav_bar.js";
 import DesktopDetails from "./../components/About/details_desktop_component";
 import MobileDetails from "./../components/About/details_mobile_component";
+import Footnote from "./../components/Footer/footnote.js";
+import FootnoteMobile from "./../components/Footer/footnote_mobile.js";
 
 import "./../css/about.css";
 
@@ -39,6 +41,7 @@ class AboutContainer extends React.Component {
             <div className="container-fluid animator">
               <DesktopDetails profile = {this.state.profile} about = {this.state.about} />
             </div>
+            <Footnote />
         </div>
       );
 
@@ -51,7 +54,7 @@ class AboutContainer extends React.Component {
           <div className="container-fluid aboutMC ">
               <MobileDetails profile = {this.state.profile} about  = {this.state.about}/>
           </div>
-
+          <FootnoteMobile />
         </div>
       );
 
