@@ -13,13 +13,25 @@
 .container-fluid{
   padding:0;
 }
+.segs{
+  position: relative;
 
+
+}
 .turnW:hover{
   color:white !important;
 }
 
 .redB{
   border:2px solid red;
+}
+
+.mt20{
+  margin-top: 20%;
+}
+
+.ml25{
+  margin-left: 25% !important;
 }
 
 .pb10px{

@@ -26,9 +26,9 @@ class AppCurrent extends React.Component {
         for(var i =0;i<this.props.currentApp.languages.length -1;i++){
           langs.push(
 
-            <div className="fl w20 ml7_5">
+            <div className="fl w20 languageIcons ml7_5">
               <img className="w100" src={this.props.currentApp.languages[i].image} />
-              <p className="fl f11 ml5">{this.props.currentApp.languages[i].name}</p>
+              <p className="fl text-center f11 ml5">{this.props.currentApp.languages[i].name}</p>
             </div>
 
           );
@@ -43,7 +43,7 @@ class AppCurrent extends React.Component {
     var boxes=[];
 
     for(var i=0;i<this.props.currentApp.difficulty;i++){
-      boxes.push(<div className={"diffSeg  br bBB h20 fl diff"+i}/>)
+      boxes.push(<div className={"w20px segs br bBB h20px fl diff"+i}/>)
     }
 
     return boxes;

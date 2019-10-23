@@ -31,7 +31,7 @@ class AppDesktopBox extends React.Component {
   render(){
 
     return (
-      <div className="pb5">
+      <div className="pb5 pb100px">
 
           <h4 className="text-center cw">My Apps</h4>
 
