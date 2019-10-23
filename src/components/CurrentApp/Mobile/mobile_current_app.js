@@ -37,6 +37,7 @@ class MobileCurrentApp extends React.Component {
             </div>
           </div>
           <br />
+          <br />
 
           <div className="w100 mt15">
             <h6 className="text-center mono bold ">Complexity:</h6>

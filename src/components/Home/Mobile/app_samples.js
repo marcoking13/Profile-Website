@@ -12,7 +12,7 @@ export default class AppSamples extends React.Component{
 
           return (
 
-            <div className="col-4 bWW turnRedE bR20 bPB  pb50px bb">
+            <div className="col-4 bWW  bR20 bPB  pb50px bb">
 
                 <div className="apBB row bb">
 
