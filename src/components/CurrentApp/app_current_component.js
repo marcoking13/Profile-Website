@@ -75,7 +75,7 @@ class AppCurrent extends React.Component {
 
           return (
 
-            <div className="container-fluid cover "style={{background:this.props.background}}>
+            <div className="container-fluid cover ">
               <NavbarMobile resetState = {this.props.resetState} changeURL = {this.props.changeURL} />
               <CurrentMobile resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
               <FootnoteMobile />

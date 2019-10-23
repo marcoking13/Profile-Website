@@ -53,11 +53,12 @@ class MobileCurrentApp extends React.Component {
               </a>
 
 
+              {this.renderPara()}
+
         </div>
 
 
 
-            {this.renderPara()}
 
 
         </div>

@@ -37,7 +37,7 @@ class MobileCurrentApp extends React.Component {
                     {this.props.currentApp.about}
                   </p>
                 </div>
-                
+
               <div>
 
                 <h6 className="text-center bold mono">Coded in:</h6>
