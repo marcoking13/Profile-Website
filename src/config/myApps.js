@@ -23,12 +23,10 @@ module.exports = [
     image:"images/ezeatz.png",
     background:"images/ezeatzb.jpg",
     className:"subL"
-
-
   },
   {
     name:"Codex",
-      code:false,
+    code:false,
     link:"https://marcoking13.github.io/Codex/",
     difficulty:7,
     languages:[
@@ -44,19 +42,17 @@ module.exports = [
         image:"images/javascript.png",
         name:"Javascript"
       }
-
     ],
     about:"Find coding events near you and learn how to code with codex's interface",
     image:"images/codex.png",
     background:"images/codexb.jpg",
     className:"codexL"
-
   },
   {
     name:"Divine Beats",
-      code:false,
+    code:false,
     link:"http://boomansion.herokuapp.com",
-    difficulty:8,
+    difficulty:12,
     languages:[
       {
         image:"images/mern.png",
@@ -76,13 +72,12 @@ module.exports = [
     image:"images/musicB.png",
     background:"images/musicbb.jpg",
     className:"subL"
-
   },
   {
     name:"React Showcase",
-      code:false,
-    link:"https://powerful-dawn-64627.herokuapp.com",
-    difficulty:5,
+    code:false,
+    link:"http://powerful-dawn-64627.herokuapp.com",
+    difficulty:6,
     languages:[
       {
         image:"images/mern.png",
@@ -102,11 +97,10 @@ module.exports = [
     image:"images/reactL.png",
     background:"images/rr.jpg",
     className:"subL"
-
   },
   {
     name:"Boo Tap",
-      code:false,
+    code:false,
     link:"http://boomansion.herokuapp.com",
     difficulty:7,
     languages:[
@@ -122,17 +116,15 @@ module.exports = [
         image:"images/javascript.png",
         name:"Javascript"
       }
-
     ],
     about:"Tap as many ghosts as possible before they cover your whole screen!",
     image:"images/boo.png",
     background:"images/or.jpg",
     className:"subL"
-
   },
   {
     name:"Space Defender",
-      code:false,
+    code:false,
     link:"http://powerful-temple-57799.herokuapp.com",
     difficulty:6,
     languages:[
@@ -154,12 +146,10 @@ module.exports = [
     image:"images/planetD.png",
     background:"images/space2.jpg",
     className:"subL"
-
   },
-
   {
     name:"Submarine Run",
-  code:"froggy1",
+    code:"froggy1",
     link:"https://sableye12.itch.io/submarine-run",
     difficulty:7,
     languages:[
@@ -176,13 +166,12 @@ module.exports = [
     image:"images/submarine.png",
     background:"images/blue.jpg",
     className:"subL"
-
   },
   {
     name:"Star Bash",
     code:"froggy1",
     link:"https://sableye12.itch.io/star-slash",
-    difficulty:6,
+    difficulty:8,
     image:"images/starbash.png",
     languages:[
       {
@@ -204,7 +193,7 @@ module.exports = [
     name:"Dragon Quest",
     code:"froggy1",
     link:"https://sableye12.itch.io/dragon-quest-gl",
-    difficulty:6,
+    difficulty:10,
     image:"images/dragon.png",
     languages:[
       {
@@ -242,7 +231,6 @@ module.exports = [
     image:"images/WvsRLogo.png",
     background:"images/wiz.jpg",
     className:""
-
-}
+  }
 
 ]
