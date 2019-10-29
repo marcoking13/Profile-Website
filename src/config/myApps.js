@@ -3,6 +3,7 @@ module.exports = [
     name:"EZ-Eatz",
     code:false,
     link:"",
+    finish:false,
     difficulty:8,
     languages:[
       {
@@ -27,6 +28,7 @@ module.exports = [
   {
     name:"Codex",
     code:false,
+    finish:true,
     link:"https://marcoking13.github.io/Codex/",
     difficulty:7,
     languages:[
@@ -51,6 +53,7 @@ module.exports = [
   {
     name:"Divine Beats",
     code:false,
+    finish:false,
     link:"http://boomansion.herokuapp.com",
     difficulty:12,
     languages:[
@@ -76,6 +79,7 @@ module.exports = [
   {
     name:"React Showcase",
     code:false,
+    finish:true,
     link:"http://powerful-dawn-64627.herokuapp.com",
     difficulty:6,
     languages:[
@@ -101,6 +105,7 @@ module.exports = [
   {
     name:"Boo Tap",
     code:false,
+    finish:true,
     link:"http://boomansion.herokuapp.com",
     difficulty:7,
     languages:[
@@ -125,6 +130,7 @@ module.exports = [
   {
     name:"Space Defender",
     code:false,
+    finish:true,
     link:"http://powerful-temple-57799.herokuapp.com",
     difficulty:6,
     languages:[
@@ -150,6 +156,7 @@ module.exports = [
   {
     name:"Submarine Run",
     code:"froggy1",
+    finish:true,
     link:"https://sableye12.itch.io/submarine-run",
     difficulty:7,
     languages:[
@@ -170,6 +177,7 @@ module.exports = [
   {
     name:"Star Bash",
     code:"froggy1",
+    finish:true,
     link:"https://sableye12.itch.io/star-slash",
     difficulty:8,
     image:"images/starbash.png",
@@ -192,6 +200,7 @@ module.exports = [
   {
     name:"Dragon Quest",
     code:"froggy1",
+    finish:true,
     link:"https://sableye12.itch.io/dragon-quest-gl",
     difficulty:10,
     image:"images/dragon.png",
@@ -215,6 +224,7 @@ module.exports = [
   {
     name:"Wizards VS Robots",
     code:"froggy1",
+    finish:false,
     link:"https://sableye12.itch.io/wizard-vs-robots",
     difficulty:7,
     languages:[

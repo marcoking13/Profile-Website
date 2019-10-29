@@ -8,10 +8,17 @@ class AppDesktopBox extends React.Component {
     return this.props.apps.map((app)=>{
 
       var background = `url(${app.background})`;
+      var opacity;
+
+      if(app.finish){
+        opacity = 1
+      }else{
+        opacity = .5
+      }
 
       return(
 
-        <div className="col-1 appBox" onClick = {()=>{
+        <div className="col-1 appBox" style={{opacity:opacity}} onClick = {()=>{
           this.props.setApp(app);
         }}>
 
