@@ -2,7 +2,7 @@ module.exports = [
   {
     name:"EZ-Eatz",
     code:false,
-    link:"",
+    link:"#",
     finish:false,
     difficulty:8,
     languages:[
@@ -54,7 +54,7 @@ module.exports = [
     name:"Divine Beats",
     code:false,
     finish:false,
-    link:"http://boomansion.herokuapp.com",
+    link:"#",
     difficulty:12,
     languages:[
       {
