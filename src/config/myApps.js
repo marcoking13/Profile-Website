@@ -224,7 +224,7 @@ module.exports = [
   {
     name:"Wizards VS Robots",
     code:"froggy1",
-    finish:false,
+    finish:true,
     link:"https://sableye12.itch.io/wizard-vs-robots",
     difficulty:7,
     languages:[
