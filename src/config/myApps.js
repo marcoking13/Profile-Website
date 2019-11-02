@@ -53,8 +53,8 @@ module.exports = [
   {
     name:"Divine Beats",
     code:false,
-    finish:false,
-    link:"#",
+    finish:true,
+    link:"https://salty-ridge-13584.herokuapp.com",
     difficulty:12,
     languages:[
       {
