@@ -2,8 +2,8 @@ module.exports = [
   {
     name:"EZ-Eatz",
     code:false,
-    link:"http://easy-eatz.herokuapp.com/",
-    finish:true,
+    link:"#",
+    finish:false,
     difficulty:8,
     languages:[
       {
@@ -76,6 +76,33 @@ module.exports = [
     background:"images/musicbb.jpg",
     className:"subL"
   },
+  {
+    name:"Pixel Maker",
+    code:false,
+    link:"#",
+    finish:false,
+    difficulty:7,
+    languages:[
+      {
+        image:"images/mern.png",
+        name:"MERN"
+      },
+      {
+        image:"images/css.png",
+        name:"CSS"
+      },
+      {
+        image:"images/javascript..png",
+        name:"Javascript"
+      }
+
+    ],
+    about:"A custom made photo editor!",
+    image:"images/pixel.png",
+    background:"images/pixel.jpg",
+    className:"subL"
+  },
+
   {
     name:"React Showcase",
     code:false,
