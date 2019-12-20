@@ -100,7 +100,7 @@ module.exports = [
     about:"A custom made photo editor!",
     image:"images/pixel.png",
     background:"images/pixel.jpg",
-    className:"subL"
+    className:"subL o5"
   },
 
   {
