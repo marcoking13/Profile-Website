@@ -2,8 +2,8 @@ module.exports = [
   {
     name:"EZ-Eatz",
     code:false,
-    link:"#",
-    finish:false,
+    link:"http://easy-eatz.herokuapp.com",
+    finish:true,
     difficulty:8,
     languages:[
       {
