@@ -6,7 +6,6 @@ import Showcase from "./../components/Home/Desktop/showcase.js";
 import LanguageBox from "./../components/Home/Desktop/language_box";
 import AppContainer from "./../components/Home/Desktop/app_container.js";
 import HomePageMobile from "./home_page_mobile";
-import Footnote from "./../components/Footer/footnote.js";
 
 import "./../css/style.css";
 
@@ -90,7 +89,7 @@ class HomePage extends React.Component {
 
             </div>
 
-              <Footnote />
+          
 
       </div>
 

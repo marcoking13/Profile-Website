@@ -5,8 +5,6 @@ import NavbarMobile from "./../Navbar/mobile_nav_bar";
 import CurrentDesktop from "./Desktop/desktop_current_app.js";
 import CurrentMobile from "./Mobile/mobile_current_app.js";
 
-import Footnote from "./../Footer/footnote.js";
-import FootnoteMobile from "./../Footer/footnote_mobile.js"
 
 import "./../../css/utility.css";
 
@@ -66,7 +64,7 @@ class AppCurrent extends React.Component {
             </div>
 
               <CurrentDesktop resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
-              <Footnote />
+          
           </div>
 
       );
@@ -78,7 +76,7 @@ class AppCurrent extends React.Component {
             <div className="container-fluid cover ">
               <NavbarMobile resetState = {this.props.resetState} changeURL = {this.props.changeURL} />
               <CurrentMobile resetState = {this.props.resetState} renderDiff = {this.renderDiff} renderLanguages = {this.renderLanguages} currentApp = {this.props.currentApp} loader = {this.props.loader}/>
-              <FootnoteMobile />
+
             </div>
 
         );

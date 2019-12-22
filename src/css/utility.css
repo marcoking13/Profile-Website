@@ -32,6 +32,12 @@
 
 
 }
+.turnBorderRed:hover{
+  border-color:red
+}
+.turnBorderRed{
+  border:2px solid transparent;
+}
 .turnW:hover{
   color:white !important;
 }

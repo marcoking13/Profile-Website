@@ -5,7 +5,7 @@ import LanguageMeter from "./../components/Home/Mobile/language_meter_mobile";
 import ResumeButtons from "./../components/Home/Mobile/resume_buttons";
 import AppSamples from "./../components/Home/Mobile/app_samples";
 import HobbyContainer from "./../components/Home/Mobile/hobby_container.js";
-import Footnote from "./../components/Footer/footnote_mobile.js";
+
 
 import "./../css/mobile.css";
 import "./../css/utility.css";
@@ -81,7 +81,7 @@ class HomePageMobile extends React.Component {
 
           </div>
 
-          <Footnote />
+        
       </div>
     );
 
