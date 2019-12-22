@@ -4,7 +4,7 @@ module.exports = [
     code:false,
     link:"http://easy-eatz.herokuapp.com",
     finish:true,
-    difficulty:8,
+    difficulty:11,
     languages:[
       {
         image:"images/mern.png",
@@ -55,7 +55,7 @@ module.exports = [
     code:false,
     finish:true,
     link:"https://salty-ridge-13584.herokuapp.com",
-    difficulty:12,
+    difficulty:10,
     languages:[
       {
         image:"images/mern.png",
@@ -76,7 +76,7 @@ module.exports = [
     background:"images/musicbb.jpg",
     className:"subL"
   },
-  
+
   {
     name:"React Showcase",
     code:false,

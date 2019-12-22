@@ -81,7 +81,7 @@ class MobileCurrentApp extends React.Component {
               </div>
             </div>
           </div>
-    );
+    )
 
   }
 

@@ -20,6 +20,15 @@
   animation:turnGrey .2s ease-in 1;
   opacity:.5;
 }
+.hobbyShow{
+  top:0px;
+  position: relative;
+}
+
+.hobbyShow:hover{
+  top:-10px;
+  animation :goUp 1 ease-in .2s;
+}
 
 .languageBox{
   margin-top:5%;
