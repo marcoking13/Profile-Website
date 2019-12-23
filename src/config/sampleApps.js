@@ -1,9 +1,9 @@
 module.exports = [
   {
-    name:"Submarine Run",
-    image:"images/submarine.png",
-    background:"url('images/subrun.jpg')",
-    link:"https://sableye12.itch.io/submarine-run"
+    name:"Codex",
+    image:"images/codex.png",
+    background:"url('images/codexb.jpg')",
+    link:"https://marcoking13.github.io/Codex/"
   },
 
   {

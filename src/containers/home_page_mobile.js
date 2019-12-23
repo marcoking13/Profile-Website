@@ -68,7 +68,9 @@ class HomePageMobile extends React.Component {
               <div  className=" container-fluid " >
                   <p className="appMCT mt10 text-center  mono bold f17" >My Apps</p>
                     <AppSamples  samples = {this.state.samples}/>
-                  <button onClick = {()=>{this.props.changeURL("apps")}} className="ssButton btn" style={{width:"50%",marginLeft:"25%",border:"2px solid black",marginTop:"7.5%"}}> See More</button>
+                    <br />
+
+                  <button onClick = {()=>{this.props.changeURL("apps")}} className="button ui red turnBlackB inverted w50 ml25 mt5 cw" > See More</button>
               </div>
 
           </div>
@@ -81,7 +83,7 @@ class HomePageMobile extends React.Component {
 
           </div>
 
-        
+
       </div>
     );
 

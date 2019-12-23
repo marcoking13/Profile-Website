@@ -71,6 +71,8 @@ class HomePage extends React.Component {
             </div>
 
             <div className="purpBorder">
+              <br />
+              <h5 className="text-center mono bold f13px cw">My Apps</h5>
               <AppContainer changeURL={this.props.changeURL} />
             </div>
 

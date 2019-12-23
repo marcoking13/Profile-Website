@@ -9,9 +9,9 @@ class AppSample extends React.Component{
 
       <div className="col-2">
 
-          <a href={this.props.app.link}><div className="appBox">
+          <a href={this.props.app.link}><div className="appBox" style={{background:this.props.app.background}}>
 
-              <div className="appImageBox" style={{background:this.props.app.background}}>
+              <div className="appImageBox">
                 <img className="appLogo" src={this.props.app.image}/>
                 <p className="text-center">{this.props.app.name}</p>
               </div>
