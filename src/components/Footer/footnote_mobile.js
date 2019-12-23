@@ -48,8 +48,8 @@ export default class Footnote extends React.Component {
               <div className="col-2">
                 <ul>
                     <li className="bold cw none">Credits</li>
-                    <li className="none gr ">Showcase</li>
-                    <li className="none gr">Credit Doc</li>
+
+                    <li className="none turnW gr" onClick = {()=>{this.props.changeURL("credits")}}>Credit Doc</li>
                     <li className="none gr">Disclaimer</li>
                 </ul>
               </div>
@@ -87,12 +87,11 @@ export default class Footnote extends React.Component {
               <br />
 
               <div className="row pb50px">
-                <div className="col-1"/>
+                <div className="col-3"/>
                 <div className="col-2 turnW gr">Legal</div>
-                <div className="col-2 turnW gr">Credits</div>
+                <div className="col-2 turnW gr" onClick = {()=>{this.props.changeURL("credits")}}>Credits</div>
                 <div className="col-2 turnW gr">Cookies</div>
-                <div className="col-2 turnW gr">Policy</div>
-                <div className="col-2 turnW gr">Disclaimer</div>
+
               </div>
 
             </div>

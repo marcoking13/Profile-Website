@@ -1,0 +1,192 @@
+module.exports = [
+  {
+    author:"Luis Garza",
+    image:"images/purps.png",
+    link:"https://www.toptal.com/designers/subtlepatterns/circle-blues-pattern/",
+  },
+  {
+    author:"N/A",
+    image:"images/avatar.png",
+    link:"https://www.seekpng.com/ima/u2r5a9a9o0q8a9e6/",
+  },
+  {
+    author:"PinClipArt",
+    image:"images/arrow.png",
+    link:"https://www.pinclipart.com/pindetail/hJooT_blue-left-arrow-transparent-clip-art-image-back/",
+  },
+  {
+    author:"Dungdm93",
+    image:"images/javascript.png",
+    link:"https://github.com/vscode-icons/vscode-icons/issues/354",
+  },
+  {
+    author:"Samat Odedara",
+    image:"images/mern.png",
+    link:"https://www.iconfinder.com/icons/1174949/js_logo_react_react_js_icon",
+  },
+  {
+    author:"Pixan",
+    image:"images/css.png",
+    link:"https://www.iconfinder.com/icons/286246/code_css_text_icon",
+  },
+  {
+    author:"Iconfinder",
+    image:"images/unity.png",
+    link:"https://www.iconfinder.com/icons/4691514/unity_icon",
+  },
+  {
+    author:"Kytrinyx",
+    image:"images/c.png",
+    link:"https://github.com/exercism/meta/issues/27",
+  },
+  {
+    author:"Icons8",
+    image:"images/java.png",
+    link:"https://iconscout.com/icon/java-43",
+  },
+  {
+    author:"Dave Gandy",
+    image:"images/github.png",
+    link:"https://www.flaticon.com/free-icon/github-logo_25231",
+  },
+  {
+    author:"Icons8",
+    image:"images/linkden.png",
+    link:"https://icons8.com/icons/set/resume",
+  },
+  {
+    author:"Wallpaperaccess",
+    image:"images/hiking.jpg",
+    link:"https://wallpaperaccess.com/hiking",
+  },
+  {
+    author:"matuska",
+    image:"images/writing.jpg",
+    link:"https://www.needpix.com/photo/844400/background-pencil-letter-writing-paper-old-handwriting",
+  },
+  {
+    author:"Writerfantast",
+    image:"images/coding.jpg",
+    link:"https://photos.com/featured/abstract-technology-background-web-developer-computer-code-programming-coding-hacker-concept-vector-illustration-format-169-writerfantast.html?product=art-print",
+  },
+  {
+    author:"588ku",
+    image:"images/reading.png",
+    link:"https://pngtree.com/freebackground/simple-and-stylish-reading-time_1082922.html",
+  },
+  {
+    author:"Galina Timofeeva",
+    image:"images/art.jpg",
+    link:"https://www.123rf.com/photo_105150326_hand-drawn-acrylic-painting-abstract-art-background-color-texture-fragment-of-artwork-abstract-paint.html",
+  },
+  {
+    author:"Marya Bitong",
+    image:"images/music.jpg",
+    link:"https://www.pinterest.com/pin/505318020691197921/",
+  },
+  {
+    author:"Envoy",
+    image:"images/circle.png",
+    link:"http://clipart-library.com/free/red-circle-with-transparent-background.html",
+  },
+  {
+    author:"Icons8",
+    image:"images/codex.png",
+    link:"https://icons8.com/icons/set/barcode",
+  },
+  {
+    author:"Send Anywhere Blog",
+    image:"images/music.png",
+    link:"https://blog.send-anywhere.com/blog/2017/01/11/pi-music-player-opens-new-paradigm-send-anywhere/pi-music-player-icon-2/",
+  },
+  {
+    author:"Marco Khodr",
+    image:"images/pixel.png",
+    link:"#",
+  },
+  {
+    author:"Free Icons Pic: Ahkam",
+    image:"images/starbash.png",
+    link:"https://www.freeiconspng.com/img/19134",
+  },
+  {
+    author:"StickPNG",
+    image:"images/submarine.png",
+    link:"https://www.stickpng.com/img/transport/submarines/submarine-icon",
+  },
+  {
+    author:"VipPNG",
+    image:"images/boo.png",
+    link:"https://www.vippng.com/preview/omhxwR_boo-mario-png-mario-boo/",
+  },
+  {
+    author:"Freepik",
+    image:"images/planetD.png",
+    link:"https://www.flaticon.com/premium-icon/planet_1146305"
+  },
+  {
+    author:"Get Drawings",
+    image:"images/league.png",
+    link:"http://getdrawings.com/dragon-icon",
+  },
+  {
+      author:"stock icons iconshock",
+      image:"images/WvsRLogo",
+      link:"http://www.iconhot.com/icon/plastic-xp-general/wizard-9.html",
+    },
+    {
+        author:"7-Themes",
+        image:"images/ezeatzb.jpg",
+        link:"http://7-themes.com/6993802-black-world-map.html",
+      },
+      {
+        author:"PixelsForBreakfast",
+        image:"images/or.png",
+        link:"https://pixelsforbreakfast.com/post/101208179205/spooky-background-skele-game-virtually"
+      },
+      {
+        author:"Paul Mincher",
+        image:"images/musicbb.jpg",
+        link:"https://www.flickr.com/photos/locallifephoto/4464871872"
+      },
+      {
+        author:"Bevouliin",
+        image:"images/subrunb.png",
+        link:"https://dribbble.com/shots/2841681-Creepy-Deep-Sea-Monster-Game-Background"
+      },
+      {
+        author:"Stephanie Pan",
+        image:"images/space1.png",
+        link:"https://opengameart.org/content/space-background-1"
+      },
+      {
+        author:"Zelox.com",
+        image:"images/redd.jpg",
+        link:"https://wallpapersafari.com/w/4N5v6O"
+      },
+      {
+        author:"SawITree",
+        image:"images/dragons.png",
+        link:"https://creativemarket.com/sawitree.lyaon/2338361-wood-lava-background"
+      },
+      {
+        author:"TasteTheDram",
+        image:"images/codexb.jpg",
+        link:"https://www.tastethedram.com/videoblocks-network-on-a-black-background-cinematic-plexus-background-seamless-loop_hagskxz4rm_thumbnail-full01/"
+      },
+      {
+        author:"Freepik",
+        image:"images/pixel.jpg",
+        link:"https://www.freepik.com/free-vector/abstract-violet-pixel-rain-background_6091932.htm"
+      },
+      {
+        author:"Caveman",
+        image:"images/rr.jpg",
+        link:"https://wallpapercave.com/cool-blue-backgrounds"
+      }
+
+
+
+
+
+]

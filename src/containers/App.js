@@ -7,6 +7,7 @@ import HomePage from "./home_page.js";
 import AppCurrent from "./../components/CurrentApp/app_current_component.js";
 import AppPage from "./app_page.js";
 import AboutPage from "./about_page";
+import CreditPage from "./credit_page";
 import Footnote from "./../components/Footer/footnote";
 import FootnoteMobile from "./../components/Footer/footnote_mobile";
 
@@ -63,6 +64,15 @@ class App extends React.Component {
           </div>
         )
       }
+
+      else if(this.state.url == "credits"){
+          return (
+            <div>
+              <CreditPage changeURL = {this.changeURL}/>;
+              {this.renderFooter()}
+            </div>
+          )
+        }
 
     else{
         return (

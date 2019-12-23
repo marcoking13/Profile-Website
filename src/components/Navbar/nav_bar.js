@@ -38,7 +38,7 @@ class NavBar extends React.Component{
           <a href = "https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"className="navChoice"><p className="navChoice">Resume</p></a>
 
           <p className="navChoice"onClick = {()=>{this.props.changeURL("about")}}>About</p>
-          <p className="navChoice contact">Contact</p>
+          <p className="navChoice contact" onClick = {()=>{  this.props.changeURL("credits")}}>Credits</p>
 
         </div>
 

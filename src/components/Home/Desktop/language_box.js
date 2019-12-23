@@ -15,7 +15,7 @@ class LanguageBox extends React.Component{
       current:0,
       languages:Languages,
       colors:[
-        "bb1",
+        "b801",
         "b801",
         "b991",
         "b324",
@@ -42,7 +42,7 @@ class LanguageBox extends React.Component{
     var html = [];
 
     for(var i = 0; i <this.state.current;i++){
-      html.push(<div className={this.state.colors[i]+" fl h20px w40px bBB seg"+i}/>);
+      html.push(<div className={this.state.colors[i]+" fl  comseg w40px bBB seg"+i}/>);
     }
 
     return html;

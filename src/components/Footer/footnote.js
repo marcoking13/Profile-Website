@@ -39,15 +39,15 @@ export default class Footnote extends React.Component {
                   <li className="bold gr  none">Projects</li>
                   <li onClick = {()=>{this.props.changeURL("apps")}} className="none turnW gr">Games</li>
                   <li onClick = {()=>{this.props.changeURL("apps")}} className="none turnW gr">Apps</li>
-                  <li onClcik = {()=>{this.props.changeURL("about")}} className="none turnW gr">Other</li>
+
               </ul>
             </div>
 
             <div className="col-2">
               <ul>
                   <li className="bold gr none">Credits</li>
-                  <a href = "#"><li className="none  gr">Showcase</li></a>
-                  <a href = "#"><li className="none   gr">Credit Doc</li></a>
+
+                  <li className="none  turnW  gr" onClick = {()=>{this.props.changeURL("credits")}}>Credit Doc</li>
                   <a href = "#"><li className="none  gr">Disclaimer</li></a>
               </ul>
             </div>
@@ -81,13 +81,11 @@ export default class Footnote extends React.Component {
           <br />
 
         <div className="row pb10px">
-          <div className="col-1"/>
-          <div className="col-1  gr">Legal</div>
-          <div className="col-1  gr">Credits</div>
-          <div className="col-1  gr">Cookies</div>
-          <div className="col-1  gr">Policy</div>
-          <div className="col-1   gr">Disclaimer</div>
-          <div className="col-1  gr">Other</div>
+          <div className="col-3"/>
+          <div className="col-2  gr">Legal</div>
+          <div className="col-2 turnW gr" onClick = {()=>{this.props.changeURL("credits")}}>Credits</div>
+          <div className="col-2  gr">Cookies</div>
+
 
         </div>
 

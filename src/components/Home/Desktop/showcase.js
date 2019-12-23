@@ -19,7 +19,7 @@ class Showcase extends React.Component{
             <div className="col-4"/>
             <div className="col-4">
               <br/>
-              <button onClick = {()=>{this.props.changeURL("about")}}className="w100 button ui inverted white">About Me</button>
+              <button onClick = {()=>{this.props.changeURL("about")}}className="w100 turnBlackB button ui inverted white">About Me</button>
             </div>
             <div className="col-4"/>
           </div>

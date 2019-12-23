@@ -56,14 +56,14 @@ class HomePage extends React.Component {
 
                 <div className="col-4">
                   <br />
-                  <a href="http://github.com/marcoking13">  <button className="button ui blue git"><img className="buttonLogo "src="images/github.png"/>My Github</button></a>
+                  <a href="http://github.com/marcoking13">  <button className="button ui blue turnBlackB"><img className="buttonLogo "src="images/github.png"/>My Github</button></a>
                 </div>
 
                   <div className="col-2"/>
 
                 <div className="col-4">
                   <br />
-                  <a href="https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"><button className=" button ui red"><img className="buttonLogo"src="images/linkden.png"/>My Resume</button></a>
+                  <a href="https://drive.google.com/file/d/0B3l-Tu2z5kHMM0ZzUFJxSTFWbGF5MHFpWDdqVENNYmVFZFBn/view?usp=sharing"><button className=" turnBlackB button ui red"><img className="buttonLogo"src="images/linkden.png"/>My Resume</button></a>
                 </div>
 
               </div>
@@ -89,7 +89,7 @@ class HomePage extends React.Component {
 
             </div>
 
-          
+
 
       </div>
 

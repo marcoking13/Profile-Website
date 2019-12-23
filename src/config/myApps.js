@@ -108,7 +108,7 @@ module.exports = [
     code:false,
     finish:true,
     link:"http://boomansion.herokuapp.com",
-    difficulty:7,
+    difficulty:4,
     languages:[
       {
         image:"images/mern.png",
@@ -125,7 +125,7 @@ module.exports = [
     ],
     about:"Tap as many ghosts as possible before they cover your whole screen!",
     image:"images/boo.png",
-    background:"images/or.jpg",
+    background:"images/or.png",
     className:"subL"
   },
   {
@@ -144,14 +144,14 @@ module.exports = [
         name:"CSS"
       },
       {
-        image:"images/javascript..png",
+        image:"images/javascript.png",
         name:"Javascript"
       }
 
     ],
     about:"Test your typing skills to save the universe",
     image:"images/planetD.png",
-    background:"images/space2.jpg",
+    background:"images/space1.png",
     className:"subL"
   },
   {
@@ -172,7 +172,7 @@ module.exports = [
     ],
     about:"How deep can you into the ocean?",
     image:"images/submarine.png",
-    background:"images/blue.jpg",
+    background:"images/subrunb.png",
     className:"subL"
   },
   {
@@ -240,7 +240,7 @@ module.exports = [
     ],
     about:"Tower defense against the wizards and their monsters",
     image:"images/WvsRLogo.png",
-    background:"images/wiz.jpg",
+    background:"images/redd.jpg",
     className:""
   }
 
